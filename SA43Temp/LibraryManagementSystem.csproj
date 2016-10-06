@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96F1D96E-7AEA-4F65-87D0-3DDD3F01939A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SA43Temp</RootNamespace>
+    <AssemblyName>SA43Temp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\BorrowingController.cs" />
+    <Compile Include="Controller\CategoryController.cs" />
+    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="Controller\MainController.cs" />
+    <Compile Include="Controller\MemberContoller.cs" />
+    <Compile Include="Controller\BookController.cs" />
+    <Compile Include="Controller\PublisherController.cs" />
+    <Compile Include="Dao\AbstaractDao.cs" />
+    <Compile Include="Dao\Book.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\BookCopy.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\BookDao.cs" />
+    <Compile Include="Dao\BorrowingDetail.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\BorrowingDetailsDao.cs" />
+    <Compile Include="Dao\Category.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\CategoryDao.cs" />
+    <Compile Include="Dao\Employee.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\Member.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\MemberDao.cs" />
+    <Compile Include="Dao\Publisher.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\PublsiherDao.cs" />
+    <Compile Include="Dao\SA43TEAMDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA43TEAMDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\SA43TEAMDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\SA43TEAMDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA43TEAMDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BookCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BookCrud.designer.cs">
+      <DependentUpon>BookCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormBorrow.Designer.cs">
+      <DependentUpon>FormBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormCategoryCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCategoryCrud.designer.cs">
+      <DependentUpon>FormCategoryCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMainWindow.Designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\FormManageBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManageBooks.Designer.cs">
+      <DependentUpon>FormManageBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManageCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManageCategories.Designer.cs">
+      <DependentUpon>FormManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManageItemsTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManageItemsTemplate.Designer.cs">
+      <DependentUpon>FormManageItemsTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManageMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManageMembers.Designer.cs">
+      <DependentUpon>FormManageMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManagePublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManagePublishers.Designer.cs">
+      <DependentUpon>FormManagePublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMemberCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMemberCrud.designer.cs">
+      <DependentUpon>FormMemberCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormReturnBook.designer.cs">
+      <DependentUpon>FormReturnBook.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\BookCrud.resx">
+      <DependentUpon>BookCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormBorrow.resx">
+      <DependentUpon>FormBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCategoryCrud.resx">
+      <DependentUpon>FormCategoryCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\FormManageBooks.resx">
+      <DependentUpon>FormManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManageCategories.resx">
+      <DependentUpon>FormManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManageItemsTemplate.resx">
+      <DependentUpon>FormManageItemsTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManageMembers.resx">
+      <DependentUpon>FormManageMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManagePublishers.resx">
+      <DependentUpon>FormManagePublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMemberCrud.resx">
+      <DependentUpon>FormMemberCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormReturnBook.resx">
+      <DependentUpon>FormReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Dao\SA43TEAMDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SA43TEAMDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Dao\SA43TEAMDataModel.edmx.diagram">
+      <DependentUpon>SA43TEAMDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dao\SA43TEAMDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SA43TEAMDataModel.edmx</DependentUpon>
+      <LastGenOutput>SA43TEAMDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Dao\SA43TEAMDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SA43TEAMDataModel.edmx</DependentUpon>
+      <LastGenOutput>SA43TEAMDataModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

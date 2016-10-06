@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="730dbbe6d6754607b158cf7abad43700" Name="Diagram1" ZoomLevel="49">
+        <EntityTypeShape EntityType="SA43TEAM11BModel.BookCopy" Width="1.5" PointX="5.875" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.Book" Width="1.5" PointX="2.875" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.BorrowingDetail" Width="1.5" PointX="11.625" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.Category" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.Employee" Width="1.5" PointX="0.875" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.Member" Width="1.5" PointX="4.875" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.Publisher" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SA43TEAM11BModel.BookCopeis_BookFK" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43TEAM11BModel.Book_CategoryFK" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43TEAM11BModel.Book_PublisherFK" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43TEAM11BModel.BorrowingDetails_BookFK" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43TEAM11BModel.BorrowingDetails_MemeberFK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
