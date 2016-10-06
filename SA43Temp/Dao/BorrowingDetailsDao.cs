@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem.Util;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -25,20 +26,33 @@ namespace LibraryManagementSystem.Dao
                 foreach( Book b in books)
                 {
                     newBorrow = new BorrowingDetail();
+                    newBorrow.BorrowingID = Guid.NewGuid();
                     newBorrow.MemberID = borrower.MemberID;
                     newBorrow.BorrowDate = DateTime.Now.Date;
-                    newBorrow.BorrowingStatus = "borrowed";
+                    newBorrow.BorrowingStatus = BookStatus.OnRent.ToString();
                     newBorrow.Fine = 0;
                     newBorrow.ReturnDate = DateTime.Now.Date.AddDays(7).Date;
                     newBorrow.Remarks = "ok";
                     newBorrow.BookID = b.BookID;
                     ct.BorrowingDetails.Add(newBorrow);
+
+                    Book temp = ct.Books.Where(x => x.BookID == b.BookID).ToList().FirstOrDefault();
+                    temp.Status = BookStatus.OnRent.ToString();
+                    ct.SaveChanges();
                 }
-                ct.SaveChanges();
+              
+
                 
             }
             
 
+        }
+
+        public void UpdateBorrowingStatus(Guid borrowingID, string status)
+        {
+            BorrowingDetail d = ct.BorrowingDetails.Where(bd => bd.BorrowingID == borrowingID).ToList().FirstOrDefault();
+            d.BorrowingStatus = status;
+            ct.SaveChanges();
         }
     }
 }
