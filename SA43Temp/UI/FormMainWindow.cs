@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows;
+using LibraryManagementSystem.Report;
 
 namespace LibraryManagementSystem.UI
 {
@@ -107,11 +108,14 @@ namespace LibraryManagementSystem.UI
 
         private void btnMain_Click(object sender, EventArgs e)
         {
-            if (pnlMain.Controls.Count == 1)
-            {
-                pnlMain.Controls.Remove(pnlMain.Controls[0]);
-                
-            }
+            //if (pnlMain.Controls.Count == 1)
+            //{
+            //    pnlMain.Controls.Remove(pnlMain.Controls[0]);
+
+            //}
+
+            CRBookListForm crfrom = new CRBookListForm();
+            crfrom.Show();
         }
 
         private void btnRetrun_Click(object sender, EventArgs e)

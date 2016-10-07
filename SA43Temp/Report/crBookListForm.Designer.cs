@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementSystem.Report
 {
-    partial class crBookListForm
+    partial class CRBookListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,18 +39,18 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1227, 530);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(932, 473);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // crBookListForm
+            // CRBookListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 530);
+            this.ClientSize = new System.Drawing.Size(932, 473);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "crBookListForm";
-            this.Text = "crBookListForm";
-            this.Load += new System.EventHandler(this.crBookListForm_Load);
+            this.Name = "CRBookListForm";
+            this.Text = "CRBookListForm";
+            this.Load += new System.EventHandler(this.CRBookListForm_Load);
             this.ResumeLayout(false);
 
         }

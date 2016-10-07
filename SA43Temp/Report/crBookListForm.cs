@@ -8,22 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryManagementSystem.Util;
 
 namespace LibraryManagementSystem.Report
 {
-    public partial class crBookListForm : Form
+    public partial class CRBookListForm : Form
     {
-        public crBookListForm()
+        public CRBookListForm()
         {
             InitializeComponent();
         }
 
-        private void crBookListForm_Load(object sender, EventArgs e)
+        private void CRBookListForm_Load(object sender, EventArgs e)
         {
-            crBookList crBooks = new crBookList();
-            SA43TEAM11BEntities ct = new SA43TEAM11BEntities();
-            crBooks.SetDataSource(ct.Books);
-            crystalReportViewer1.ReportSource = crBooks;
+            BookDao dao = new BookDao();
+            crBookList bReport = new crBookList();
+            bReport.SetDataSource( dao.BookList.Where(b=>b.Status == BookStatus.OnRent.ToString()));
+            crystalReportViewer1.ReportSource = bReport;
         }
     }
 }
