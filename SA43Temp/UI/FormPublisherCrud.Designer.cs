@@ -42,7 +42,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(624, 642);
+            this.btnSave.Location = new System.Drawing.Point(684, 642);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 35);
@@ -53,7 +53,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(746, 642);
+            this.btnCancel.Location = new System.Drawing.Point(831, 642);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 35);
@@ -75,7 +75,7 @@
             this.gbPublisherInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbPublisherInfo.Name = "gbPublisherInfo";
             this.gbPublisherInfo.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbPublisherInfo.Size = new System.Drawing.Size(840, 543);
+            this.gbPublisherInfo.Size = new System.Drawing.Size(925, 612);
             this.gbPublisherInfo.TabIndex = 10;
             this.gbPublisherInfo.TabStop = false;
             this.gbPublisherInfo.Text = "Publisher Infomation";
@@ -139,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 712);
+            this.ClientSize = new System.Drawing.Size(978, 744);
             this.Controls.Add(this.gbPublisherInfo);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);

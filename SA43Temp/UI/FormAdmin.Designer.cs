@@ -33,8 +33,8 @@
             this.btnManageCategories = new System.Windows.Forms.Button();
             this.btnManageMembers = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnManageEmployee = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,21 +105,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Members or Employee";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.AutoSize = true;
-            this.groupBox2.Controls.Add(this.btnManageBooks);
-            this.groupBox2.Controls.Add(this.btnManageCategories);
-            this.groupBox2.Controls.Add(this.btnManagePulishers);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.groupBox2.Location = new System.Drawing.Point(42, 46);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(957, 155);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Books";
-            // 
             // btnManageEmployee
             // 
             this.btnManageEmployee.BackColor = System.Drawing.Color.Tan;
@@ -131,14 +116,29 @@
             this.btnManageEmployee.TabIndex = 4;
             this.btnManageEmployee.Text = "Manage Employee";
             this.btnManageEmployee.UseVisualStyleBackColor = false;
+            this.btnManageEmployee.Click += new System.EventHandler(this.btnManageEmployee_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.Controls.Add(this.btnManageBooks);
+            this.groupBox2.Controls.Add(this.btnManageCategories);
+            this.groupBox2.Controls.Add(this.btnManagePulishers);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.groupBox2.Location = new System.Drawing.Point(42, 46);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1081, 155);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Books";
             // 
             // FormAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1158, 577);
+            this.ClientSize = new System.Drawing.Size(1158, 744);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormAdmin";

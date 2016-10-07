@@ -42,5 +42,10 @@ namespace LibraryManagementSystem.UI
             BookController bookController = new BookController();
             bookController.ShowManageBookForm();
         }
+
+        private void btnManageEmployee_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Under Development");
+        }
     }
 }

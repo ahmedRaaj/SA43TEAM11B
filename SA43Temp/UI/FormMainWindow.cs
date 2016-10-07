@@ -67,18 +67,7 @@ namespace LibraryManagementSystem.UI
             }
             
             FormAdmin lgf = new FormAdmin();
-            lgf.TopLevel = false;
-            lgf.FormBorderStyle = FormBorderStyle.None;
-            pnlMain.BorderStyle = BorderStyle.FixedSingle;
-          
-            pnlMain.SuspendLayout();
-
-            lgf.Dock = DockStyle.Fill;
-            lgf.AutoSize = true;
-            pnlMain.Controls.Add(lgf);
-
-            pnlMain.ResumeLayout(false);
-            pnlMain.PerformLayout();
+            ShowInMainPanel(lgf);
 
             lgf.Show();
 
@@ -87,27 +76,33 @@ namespace LibraryManagementSystem.UI
         private void btnBorrow_Click(object sender, EventArgs e)
         {
 
-            if (pnlMain.Controls.Count == 1)
-            {
-                pnlMain.Controls.Remove(pnlMain.Controls[0]);
-            }
+           
             BorrowingController brrControl = new BorrowingController();
-            brrControl.FormBorrow.TopLevel = false;
-            brrControl.FormBorrow.FormBorderStyle = FormBorderStyle.None;
-
-
-            pnlMain.SuspendLayout();
-
-            brrControl.FormBorrow.Dock = DockStyle.Fill;
-            brrControl.FormBorrow.AutoSize = true;
-            pnlMain.Controls.Add(brrControl.FormBorrow);
-
-            pnlMain.ResumeLayout(false);
-            pnlMain.PerformLayout();
+            ShowInMainPanel(brrControl.FormBorrow);
             brrControl.ShowBorrowForm();
 
 
 
+        }
+
+        private void ShowInMainPanel(Form fromToPut)
+        {
+            fromToPut.TopLevel = false;
+            fromToPut.FormBorderStyle = FormBorderStyle.None;
+
+            if (pnlMain.Controls.Count == 1)
+            {
+                pnlMain.Controls.Remove(pnlMain.Controls[0]);
+            }
+
+            pnlMain.SuspendLayout();
+
+            fromToPut.Dock = DockStyle.Fill;
+            fromToPut.AutoSize = true;
+            pnlMain.Controls.Add(fromToPut);
+
+            pnlMain.ResumeLayout(false);
+            pnlMain.PerformLayout();
         }
 
         private void btnMain_Click(object sender, EventArgs e)
@@ -204,6 +199,19 @@ namespace LibraryManagementSystem.UI
         {
             ReturningController control = new ReturningController();
             control.ShowReturningForm();
+        }
+
+        private void supplierToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            PublisherController control = new PublisherController();
+            control.InitialCrud(true);
+        }
+
+        private void borrowToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            BorrowingController con = new BorrowingController();
+            ShowInMainPanel(con.FormBorrow);
+            con.FormBorrow.Show();
         }
     }
 }

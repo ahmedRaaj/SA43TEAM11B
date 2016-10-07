@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.Controller
         }
         public void ShowManageCategoryForm()
         {
-            fromManagerCategory.Show();
+            fromManagerCategory.ShowDialog();
         }
 
         public void Filter(string searchType,string keywords)
@@ -67,7 +67,7 @@ namespace LibraryManagementSystem.Controller
                 catCrudForm.UpdateFields(cat.CategoryID, cat.CategoryName, cat.Details);
             }
             
-            catCrudForm.Show();
+            catCrudForm.ShowDialog();
 
         }
 

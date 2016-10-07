@@ -31,6 +31,10 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(1241, 91);
+            // 
             // btnReset
             // 
             this.btnReset.Location = new System.Drawing.Point(756, 25);
@@ -63,7 +67,8 @@
             // FormManageCategories
             // 
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(2026, 1036);
+            this.ClientSize = new System.Drawing.Size(1275, 539);
+            this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageCategories";
             this.Load += new System.EventHandler(this.FormManageCategories_Load);
             this.groupBox1.ResumeLayout(false);

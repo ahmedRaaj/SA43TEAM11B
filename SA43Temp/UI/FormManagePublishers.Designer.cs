@@ -31,6 +31,10 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(1241, 91);
+            // 
             // btnReset
             // 
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -54,7 +58,8 @@
             // FormManagePublishers
             // 
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(2026, 1036);
+            this.ClientSize = new System.Drawing.Size(1272, 525);
+            this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManagePublishers";
             this.Load += new System.EventHandler(this.FormManagePublishers_Load);
             this.groupBox1.ResumeLayout(false);

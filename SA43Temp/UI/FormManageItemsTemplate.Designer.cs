@@ -68,7 +68,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1147, 91);
+            this.groupBox1.Size = new System.Drawing.Size(1241, 91);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter";
@@ -183,7 +183,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1265, 512);
+            this.ClientSize = new System.Drawing.Size(1276, 519);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);

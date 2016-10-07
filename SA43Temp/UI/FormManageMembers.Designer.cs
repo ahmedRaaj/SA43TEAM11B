@@ -54,7 +54,8 @@
             // FormManageMembers
             // 
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(2026, 1036);
+            this.ClientSize = new System.Drawing.Size(1289, 542);
+            this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageMembers";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

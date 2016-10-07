@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainWindow));
             this.pnlMain = new System.Windows.Forms.Panel();
             this.btnAdminManage = new System.Windows.Forms.Button();
             this.btnBorrow = new System.Windows.Forms.Button();
@@ -60,7 +59,6 @@
             // 
             this.pnlMain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlMain.AutoSize = true;
-            this.pnlMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMain.BackgroundImage")));
             this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMain.Location = new System.Drawing.Point(255, 56);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -144,7 +142,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -180,6 +178,7 @@
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
             this.supplierToolStripMenuItem.Size = new System.Drawing.Size(215, 30);
             this.supplierToolStripMenuItem.Text = "Publisher";
+            this.supplierToolStripMenuItem.Click += new System.EventHandler(this.supplierToolStripMenuItem_Click_1);
             // 
             // bookCategoryToolStripMenuItem
             // 
@@ -202,7 +201,7 @@
             this.publishersToolStripMenuItem,
             this.membersToolStripMenuItem});
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(161, 30);
             this.manageToolStripMenuItem.Text = "Manage";
             // 
             // booksToolStripMenuItem
@@ -244,8 +243,9 @@
             // borrowToolStripMenuItem1
             // 
             this.borrowToolStripMenuItem1.Name = "borrowToolStripMenuItem1";
-            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(154, 30);
+            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
             this.borrowToolStripMenuItem1.Text = "Borrow";
+            this.borrowToolStripMenuItem1.Click += new System.EventHandler(this.borrowToolStripMenuItem1_Click_1);
             // 
             // returnToolStripMenuItem
             // 
@@ -275,7 +275,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1209, 688);
             this.Controls.Add(this.btnReport);

@@ -39,11 +39,11 @@ namespace LibraryManagementSystem.Controller
                 Publisher pub = formPublishers.dgv.SelectedRows[0].DataBoundItem as Publisher;
                 FromPublisher.UpdateFields(pub.PublisherID, pub.PublisherName, pub.PublisherWeb, pub.PublisherDetails);
             }
-            FromPublisher.Show();
+            FromPublisher.ShowDialog();
         }
         public void ShowManagePublisherForm()
         {
-            formPublishers.Show();
+            formPublishers.ShowDialog();
         }
 
         public void Filter(string searchType, string keywords)

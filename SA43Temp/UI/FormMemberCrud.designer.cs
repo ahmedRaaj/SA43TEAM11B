@@ -183,7 +183,7 @@
             this.gbBasicInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbBasicInformation.Name = "gbBasicInformation";
             this.gbBasicInformation.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbBasicInformation.Size = new System.Drawing.Size(840, 210);
+            this.gbBasicInformation.Size = new System.Drawing.Size(901, 210);
             this.gbBasicInformation.TabIndex = 14;
             this.gbBasicInformation.TabStop = false;
             this.gbBasicInformation.Text = "Basic Information";
@@ -210,7 +210,7 @@
             this.gbContactInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbContactInformation.Name = "gbContactInformation";
             this.gbContactInformation.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbContactInformation.Size = new System.Drawing.Size(840, 263);
+            this.gbContactInformation.Size = new System.Drawing.Size(901, 265);
             this.gbContactInformation.TabIndex = 15;
             this.gbContactInformation.TabStop = false;
             this.gbContactInformation.Text = "Contact Information";
@@ -242,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(876, 710);
+            this.ClientSize = new System.Drawing.Size(978, 744);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.dpkCreationDate);

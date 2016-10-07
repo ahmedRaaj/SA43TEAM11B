@@ -48,13 +48,13 @@ namespace LibraryManagementSystem.Controller
                 Member m = FormManageMember.dgv.SelectedRows[0].DataBoundItem as Member;
                 FromMember.UpdateFields(m.MemberID, m.MemberName, m.City, m.Address,m.Phone,m.Email,m.MembershipStatus,Date);
             }
-            FromMember.Show();
+            FromMember.ShowDialog();
         }
 
 
         public void ShowManageMeberForm()
         {
-            FormManageMember.Show();
+            FormManageMember.ShowDialog();
         }
         public void Reset()
         {

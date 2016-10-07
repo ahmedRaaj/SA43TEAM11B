@@ -54,7 +54,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(624, 642);
+            this.btnSave.Location = new System.Drawing.Point(682, 642);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 35);
@@ -65,7 +65,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(746, 642);
+            this.btnCancel.Location = new System.Drawing.Point(840, 642);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 35);
@@ -91,7 +91,7 @@
             this.gbBookInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbBookInformation.Name = "gbBookInformation";
             this.gbBookInformation.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbBookInformation.Size = new System.Drawing.Size(840, 302);
+            this.gbBookInformation.Size = new System.Drawing.Size(934, 301);
             this.gbBookInformation.TabIndex = 8;
             this.gbBookInformation.TabStop = false;
             this.gbBookInformation.Text = "Book Information";
@@ -202,7 +202,7 @@
             this.gbBookStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbBookStatus.Name = "gbBookStatus";
             this.gbBookStatus.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbBookStatus.Size = new System.Drawing.Size(840, 285);
+            this.gbBookStatus.Size = new System.Drawing.Size(934, 278);
             this.gbBookStatus.TabIndex = 9;
             this.gbBookStatus.TabStop = false;
             this.gbBookStatus.Text = "Book Status";
@@ -270,7 +270,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 711);
+            this.ClientSize = new System.Drawing.Size(978, 744);
             this.Controls.Add(this.gbBookStatus);
             this.Controls.Add(this.gbBookInformation);
             this.Controls.Add(this.btnSave);

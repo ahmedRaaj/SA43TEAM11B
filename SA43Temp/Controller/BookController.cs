@@ -46,7 +46,8 @@ namespace LibraryManagementSystem.Controller
 
         public void ShowManageBookForm()
         {
-            FormManageBook.Show();
+
+            FormManageBook.ShowDialog();
         }
 
         public void Filter(string searchType, string keywords)
