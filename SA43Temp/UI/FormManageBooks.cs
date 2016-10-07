@@ -21,6 +21,19 @@ namespace LibraryManagementSystem.UI
         public FormManageBooks()
         {
             InitializeComponent();
+            this.dgv.DataSourceChanged += dgvBooksSourceChanged;
+        }
+
+        private void dgvBooksSourceChanged(object sender, EventArgs e)
+        {
+            if (dgv.DataSource != null)
+            {
+                this.dgv.Columns["CategoryID"].Visible = false;
+                this.dgv.Columns["PublisherID"].Visible = false;
+                this.dgv.Columns["BorrowingDetails"].Visible = false;
+                this.dgv.Columns["BookCopy"].Visible = false;
+
+            }
         }
 
         private void btnCreateNew_Click(object sender, EventArgs e)

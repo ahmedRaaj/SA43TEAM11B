@@ -16,6 +16,19 @@ namespace LibraryManagementSystem.UI
         public FormManageMembers()
         {
             InitializeComponent();
+            this.dgv.DataSourceChanged += dgvMemberSourceChange;
+        }
+
+        private void dgvMemberSourceChange(object sender, EventArgs e)
+        {
+ 
+            //  throw new NotImplementedException(); todo
+            if (this.dgv.DataSource != null)
+            {
+                 this.dgv.Columns["MemberID"].Visible=false;
+                this.dgv.Columns["BorrowingDetails"].Visible = false;
+                //this.dgv.Columns["MemberID"].Visible = false;
+            }
         }
 
         public FormManageMembers(MemberContoller controller) : this()

@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBookList = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnManagementReport = new System.Windows.Forms.Button();
+            this.btnBooksRented = new System.Windows.Forms.Button();
+            this.btnFineReport = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnBookList
             // 
-            this.button1.BackColor = System.Drawing.Color.BurlyWood;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(182, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Book List";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBookList.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBookList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookList.Location = new System.Drawing.Point(182, 120);
+            this.btnBookList.Name = "btnBookList";
+            this.btnBookList.Size = new System.Drawing.Size(200, 60);
+            this.btnBookList.TabIndex = 1;
+            this.btnBookList.Text = "Book List";
+            this.btnBookList.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -55,37 +55,38 @@
             this.label4.Size = new System.Drawing.Size(0, 12);
             this.label4.TabIndex = 5;
             // 
-            // button2
+            // btnManagementReport
             // 
-            this.button2.BackColor = System.Drawing.Color.BurlyWood;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(182, 187);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 36);
-            this.button2.TabIndex = 6;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnManagementReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnManagementReport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManagementReport.Location = new System.Drawing.Point(182, 220);
+            this.btnManagementReport.Name = "btnManagementReport";
+            this.btnManagementReport.Size = new System.Drawing.Size(200, 60);
+            this.btnManagementReport.TabIndex = 6;
+            this.btnManagementReport.Text = "Management Report";
+            this.btnManagementReport.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnBooksRented
             // 
-            this.button3.BackColor = System.Drawing.Color.BurlyWood;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(182, 250);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(192, 37);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Books Rented";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBooksRented.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBooksRented.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooksRented.Location = new System.Drawing.Point(182, 320);
+            this.btnBooksRented.Name = "btnBooksRented";
+            this.btnBooksRented.Size = new System.Drawing.Size(200, 60);
+            this.btnBooksRented.TabIndex = 7;
+            this.btnBooksRented.Text = "Books Rented Report";
+            this.btnBooksRented.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnFineReport
             // 
-            this.button4.BackColor = System.Drawing.Color.BurlyWood;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(182, 314);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(192, 34);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Borrow Rate per Category";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnFineReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnFineReport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFineReport.Location = new System.Drawing.Point(182, 420);
+            this.btnFineReport.Name = "btnFineReport";
+            this.btnFineReport.Size = new System.Drawing.Size(200, 60);
+            this.btnFineReport.TabIndex = 8;
+            this.btnFineReport.Text = "Fine Collected Report";
+            this.btnFineReport.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -103,13 +104,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1158, 577);
+            this.ClientSize = new System.Drawing.Size(1154, 579);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnFineReport);
+            this.Controls.Add(this.btnBooksRented);
+            this.Controls.Add(this.btnManagementReport);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBookList);
             this.Name = "FormReport";
             this.Text = "Report List";
             this.ResumeLayout(false);
@@ -118,11 +119,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBookList;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnManagementReport;
+        private System.Windows.Forms.Button btnBooksRented;
+        private System.Windows.Forms.Button btnFineReport;
         private System.Windows.Forms.Label label1;
     }
 }
