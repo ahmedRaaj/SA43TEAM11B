@@ -13,6 +13,7 @@ namespace LibraryManagementSystem.Controller
         private List<Publisher> _publisherList;
         private PublisherDao pubDao;
         private FormManagePublishers formPublishers;
+        private UI.FormPublisherCrud pubCrud;
         public List<Publisher> CategoryList
         {
             get

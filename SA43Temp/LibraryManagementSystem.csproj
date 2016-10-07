@@ -195,6 +195,7 @@
       <DependentUpon>FormReturnBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\BookStatus.cs" />
+    <Compile Include="Util\MemberStatus.cs" />
     <EmbeddedResource Include="UI\BookCrud.resx">
       <DependentUpon>BookCrud.cs</DependentUpon>
     </EmbeddedResource>
