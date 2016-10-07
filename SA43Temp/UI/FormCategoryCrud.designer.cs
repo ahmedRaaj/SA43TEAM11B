@@ -52,7 +52,7 @@
             this.tbCategoryName.Location = new System.Drawing.Point(248, 142);
             this.tbCategoryName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCategoryName.Name = "tbCategoryName";
-            this.tbCategoryName.Size = new System.Drawing.Size(426, 26);
+            this.tbCategoryName.Size = new System.Drawing.Size(457, 26);
             this.tbCategoryName.TabIndex = 1;
             // 
             // tbCategoryDetails
@@ -61,7 +61,7 @@
             this.tbCategoryDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCategoryDetails.Multiline = true;
             this.tbCategoryDetails.Name = "tbCategoryDetails";
-            this.tbCategoryDetails.Size = new System.Drawing.Size(426, 281);
+            this.tbCategoryDetails.Size = new System.Drawing.Size(457, 179);
             this.tbCategoryDetails.TabIndex = 3;
             // 
             // lblCategoryDetails
@@ -111,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(876, 711);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);

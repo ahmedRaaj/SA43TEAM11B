@@ -75,21 +75,23 @@
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.BurlyWood;
             this.btnReset.Location = new System.Drawing.Point(734, 25);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 46);
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // btnFilter
             // 
+            this.btnFilter.BackColor = System.Drawing.Color.BurlyWood;
             this.btnFilter.Location = new System.Drawing.Point(628, 25);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(100, 46);
             this.btnFilter.TabIndex = 4;
             this.btnFilter.Text = "Filter";
-            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.UseVisualStyleBackColor = false;
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // txbKeyword
@@ -127,39 +129,43 @@
             // 
             // btnCreateNew
             // 
+            this.btnCreateNew.BackColor = System.Drawing.Color.BurlyWood;
             this.btnCreateNew.Location = new System.Drawing.Point(511, 462);
             this.btnCreateNew.Name = "btnCreateNew";
             this.btnCreateNew.Size = new System.Drawing.Size(108, 38);
             this.btnCreateNew.TabIndex = 2;
             this.btnCreateNew.Text = "Create New";
-            this.btnCreateNew.UseVisualStyleBackColor = true;
+            this.btnCreateNew.UseVisualStyleBackColor = false;
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.BurlyWood;
             this.btnEdit.Location = new System.Drawing.Point(668, 462);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(108, 38);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.BurlyWood;
             this.btnDelete.Location = new System.Drawing.Point(815, 462);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 38);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnDetails
             // 
+            this.btnDetails.BackColor = System.Drawing.Color.BurlyWood;
             this.btnDetails.Location = new System.Drawing.Point(352, 462);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Size = new System.Drawing.Size(108, 38);
             this.btnDetails.TabIndex = 5;
             this.btnDetails.Text = "Details";
-            this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.UseVisualStyleBackColor = false;
             // 
             // btnDataEdit
             // 
@@ -176,6 +182,7 @@
             // FormManageItemsTemplate
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(1265, 512);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.btnDelete);

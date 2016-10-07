@@ -48,14 +48,14 @@
             this.lblBookID = new System.Windows.Forms.Label();
             this.tbBookID = new System.Windows.Forms.TextBox();
             this.gbMemberDetails = new System.Windows.Forms.GroupBox();
+            this.btnReturnBook = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.lblRemark = new System.Windows.Forms.Label();
             this.tbRemark = new System.Windows.Forms.TextBox();
             this.tbMemberName = new System.Windows.Forms.Label();
             this.tbMemberM = new System.Windows.Forms.TextBox();
             this.lblMemberID = new System.Windows.Forms.Label();
             this.tbMemberID = new System.Windows.Forms.TextBox();
-            this.btnReturnBook = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.gbScanDetails.SuspendLayout();
             this.gbBookDetails.SuspendLayout();
             this.gbMemberDetails.SuspendLayout();
@@ -79,24 +79,27 @@
             // 
             // btnScan
             // 
+            this.btnScan.BackColor = System.Drawing.Color.BurlyWood;
             this.btnScan.Location = new System.Drawing.Point(718, 38);
             this.btnScan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(112, 35);
             this.btnScan.TabIndex = 4;
             this.btnScan.Text = "Scan";
-            this.btnScan.UseVisualStyleBackColor = true;
+            this.btnScan.UseVisualStyleBackColor = false;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // lblScanTpye
             // 
             this.lblScanTpye.AutoSize = true;
+            this.lblScanTpye.BackColor = System.Drawing.Color.BurlyWood;
             this.lblScanTpye.Location = new System.Drawing.Point(384, 46);
             this.lblScanTpye.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblScanTpye.Name = "lblScanTpye";
-            this.lblScanTpye.Size = new System.Drawing.Size(88, 20);
+            this.lblScanTpye.Size = new System.Drawing.Size(84, 20);
             this.lblScanTpye.TabIndex = 3;
-            this.lblScanTpye.Text = "Scan Tpye:";
+            this.lblScanTpye.Text = "Scan Type";
+            this.lblScanTpye.Click += new System.EventHandler(this.lblScanTpye_Click);
             // 
             // cbScanType
             // 
@@ -150,6 +153,7 @@
             // 
             // tbFine
             // 
+            this.tbFine.BackColor = System.Drawing.SystemColors.Window;
             this.tbFine.Location = new System.Drawing.Point(486, 168);
             this.tbFine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbFine.Name = "tbFine";
@@ -169,6 +173,7 @@
             // 
             // tbReturnDate
             // 
+            this.tbReturnDate.BackColor = System.Drawing.SystemColors.Window;
             this.tbReturnDate.Location = new System.Drawing.Point(138, 208);
             this.tbReturnDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbReturnDate.Name = "tbReturnDate";
@@ -188,6 +193,7 @@
             // 
             // tbBorrowDate
             // 
+            this.tbBorrowDate.BackColor = System.Drawing.SystemColors.Window;
             this.tbBorrowDate.Location = new System.Drawing.Point(138, 168);
             this.tbBorrowDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbBorrowDate.Name = "tbBorrowDate";
@@ -197,6 +203,7 @@
             // 
             // tbISBN
             // 
+            this.tbISBN.BackColor = System.Drawing.SystemColors.Window;
             this.tbISBN.Location = new System.Drawing.Point(405, 85);
             this.tbISBN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbISBN.Name = "tbISBN";
@@ -236,6 +243,7 @@
             // 
             // tbBookName
             // 
+            this.tbBookName.BackColor = System.Drawing.SystemColors.Window;
             this.tbBookName.Location = new System.Drawing.Point(405, 45);
             this.tbBookName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbBookName.Name = "tbBookName";
@@ -255,6 +263,7 @@
             // 
             // tbBookID
             // 
+            this.tbBookID.BackColor = System.Drawing.SystemColors.Window;
             this.tbBookID.Location = new System.Drawing.Point(138, 45);
             this.tbBookID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbBookID.Name = "tbBookID";
@@ -281,64 +290,6 @@
             this.gbMemberDetails.TabStop = false;
             this.gbMemberDetails.Text = "Member Detail";
             // 
-            // lblRemark
-            // 
-            this.lblRemark.AutoSize = true;
-            this.lblRemark.Location = new System.Drawing.Point(56, 74);
-            this.lblRemark.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRemark.Name = "lblRemark";
-            this.lblRemark.Size = new System.Drawing.Size(69, 20);
-            this.lblRemark.TabIndex = 11;
-            this.lblRemark.Text = "Remark:";
-            // 
-            // tbRemark
-            // 
-            this.tbRemark.Location = new System.Drawing.Point(138, 69);
-            this.tbRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbRemark.Multiline = true;
-            this.tbRemark.Name = "tbRemark";
-            this.tbRemark.ReadOnly = true;
-            this.tbRemark.Size = new System.Drawing.Size(655, 59);
-            this.tbRemark.TabIndex = 10;
-            // 
-            // tbMemberName
-            // 
-            this.tbMemberName.AutoSize = true;
-            this.tbMemberName.Location = new System.Drawing.Point(278, 34);
-            this.tbMemberName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tbMemberName.Name = "tbMemberName";
-            this.tbMemberName.Size = new System.Drawing.Size(117, 20);
-            this.tbMemberName.TabIndex = 9;
-            this.tbMemberName.Text = "Member Name:";
-            // 
-            // tbMemberM
-            // 
-            this.tbMemberM.Location = new System.Drawing.Point(405, 29);
-            this.tbMemberM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbMemberM.Name = "tbMemberM";
-            this.tbMemberM.ReadOnly = true;
-            this.tbMemberM.Size = new System.Drawing.Size(388, 26);
-            this.tbMemberM.TabIndex = 8;
-            // 
-            // lblMemberID
-            // 
-            this.lblMemberID.AutoSize = true;
-            this.lblMemberID.Location = new System.Drawing.Point(36, 34);
-            this.lblMemberID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMemberID.Name = "lblMemberID";
-            this.lblMemberID.Size = new System.Drawing.Size(92, 20);
-            this.lblMemberID.TabIndex = 7;
-            this.lblMemberID.Text = "Member ID:";
-            // 
-            // tbMemberID
-            // 
-            this.tbMemberID.Location = new System.Drawing.Point(138, 29);
-            this.tbMemberID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbMemberID.Name = "tbMemberID";
-            this.tbMemberID.ReadOnly = true;
-            this.tbMemberID.Size = new System.Drawing.Size(109, 26);
-            this.tbMemberID.TabIndex = 6;
-            // 
             // btnReturnBook
             // 
             this.btnReturnBook.Location = new System.Drawing.Point(527, 156);
@@ -361,9 +312,71 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // lblRemark
+            // 
+            this.lblRemark.AutoSize = true;
+            this.lblRemark.Location = new System.Drawing.Point(56, 74);
+            this.lblRemark.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRemark.Name = "lblRemark";
+            this.lblRemark.Size = new System.Drawing.Size(69, 20);
+            this.lblRemark.TabIndex = 11;
+            this.lblRemark.Text = "Remark:";
+            // 
+            // tbRemark
+            // 
+            this.tbRemark.BackColor = System.Drawing.SystemColors.Window;
+            this.tbRemark.Location = new System.Drawing.Point(138, 69);
+            this.tbRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbRemark.Multiline = true;
+            this.tbRemark.Name = "tbRemark";
+            this.tbRemark.ReadOnly = true;
+            this.tbRemark.Size = new System.Drawing.Size(655, 59);
+            this.tbRemark.TabIndex = 10;
+            // 
+            // tbMemberName
+            // 
+            this.tbMemberName.AutoSize = true;
+            this.tbMemberName.Location = new System.Drawing.Point(278, 34);
+            this.tbMemberName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tbMemberName.Name = "tbMemberName";
+            this.tbMemberName.Size = new System.Drawing.Size(117, 20);
+            this.tbMemberName.TabIndex = 9;
+            this.tbMemberName.Text = "Member Name:";
+            // 
+            // tbMemberM
+            // 
+            this.tbMemberM.BackColor = System.Drawing.SystemColors.Window;
+            this.tbMemberM.Location = new System.Drawing.Point(405, 29);
+            this.tbMemberM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbMemberM.Name = "tbMemberM";
+            this.tbMemberM.ReadOnly = true;
+            this.tbMemberM.Size = new System.Drawing.Size(388, 26);
+            this.tbMemberM.TabIndex = 8;
+            // 
+            // lblMemberID
+            // 
+            this.lblMemberID.AutoSize = true;
+            this.lblMemberID.Location = new System.Drawing.Point(36, 34);
+            this.lblMemberID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMemberID.Name = "lblMemberID";
+            this.lblMemberID.Size = new System.Drawing.Size(92, 20);
+            this.lblMemberID.TabIndex = 7;
+            this.lblMemberID.Text = "Member ID:";
+            // 
+            // tbMemberID
+            // 
+            this.tbMemberID.BackColor = System.Drawing.SystemColors.Window;
+            this.tbMemberID.Location = new System.Drawing.Point(138, 29);
+            this.tbMemberID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbMemberID.Name = "tbMemberID";
+            this.tbMemberID.ReadOnly = true;
+            this.tbMemberID.Size = new System.Drawing.Size(109, 26);
+            this.tbMemberID.TabIndex = 6;
+            // 
             // FormReturnBook
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(934, 734);
             this.Controls.Add(this.gbMemberDetails);
             this.Controls.Add(this.gbBookDetails);

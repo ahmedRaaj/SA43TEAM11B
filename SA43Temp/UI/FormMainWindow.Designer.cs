@@ -38,11 +38,6 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrowToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnReport = new System.Windows.Forms.Button();
             this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +48,11 @@
             this.bookCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.publishersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.membersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrowToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReport = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,55 +62,65 @@
             this.pnlMain.AutoSize = true;
             this.pnlMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMain.BackgroundImage")));
             this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlMain.Location = new System.Drawing.Point(212, 84);
+            this.pnlMain.Location = new System.Drawing.Point(255, 56);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(803, 588);
+            this.pnlMain.Size = new System.Drawing.Size(850, 637);
             this.pnlMain.TabIndex = 1;
             // 
             // btnAdminManage
             // 
             this.btnAdminManage.AutoSize = true;
-            this.btnAdminManage.Location = new System.Drawing.Point(25, 217);
-            this.btnAdminManage.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.btnAdminManage.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnAdminManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAdminManage.Location = new System.Drawing.Point(28, 212);
+            this.btnAdminManage.Margin = new System.Windows.Forms.Padding(34, 3, 4, 3);
             this.btnAdminManage.Name = "btnAdminManage";
-            this.btnAdminManage.Size = new System.Drawing.Size(152, 56);
+            this.btnAdminManage.Size = new System.Drawing.Size(168, 64);
             this.btnAdminManage.TabIndex = 2;
             this.btnAdminManage.Text = "Admin Manage";
-            this.btnAdminManage.UseVisualStyleBackColor = true;
+            this.btnAdminManage.UseVisualStyleBackColor = false;
             this.btnAdminManage.Click += new System.EventHandler(this.btnAdminManage_Click);
             // 
             // btnBorrow
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(25, 331);
+            this.btnBorrow.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBorrow.Location = new System.Drawing.Point(28, 319);
+            this.btnBorrow.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBorrow.Name = "btnBorrow";
-            this.btnBorrow.Size = new System.Drawing.Size(152, 67);
+            this.btnBorrow.Size = new System.Drawing.Size(168, 64);
             this.btnBorrow.TabIndex = 3;
             this.btnBorrow.Text = "Borrow";
-            this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // btnRetrun
             // 
-            this.btnRetrun.Location = new System.Drawing.Point(25, 453);
+            this.btnRetrun.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnRetrun.Location = new System.Drawing.Point(28, 426);
+            this.btnRetrun.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRetrun.Name = "btnRetrun";
-            this.btnRetrun.Size = new System.Drawing.Size(152, 71);
+            this.btnRetrun.Size = new System.Drawing.Size(168, 64);
             this.btnRetrun.TabIndex = 4;
             this.btnRetrun.Text = "Return";
-            this.btnRetrun.UseVisualStyleBackColor = true;
+            this.btnRetrun.UseVisualStyleBackColor = false;
             this.btnRetrun.Click += new System.EventHandler(this.btnRetrun_Click);
             // 
             // btnMain
             // 
-            this.btnMain.Location = new System.Drawing.Point(25, 112);
+            this.btnMain.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnMain.Location = new System.Drawing.Point(28, 105);
+            this.btnMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(152, 58);
+            this.btnMain.Size = new System.Drawing.Size(168, 64);
             this.btnMain.TabIndex = 5;
             this.btnMain.Text = "Main";
-            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.UseVisualStyleBackColor = false;
             this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -119,7 +129,7 @@
             this.reportToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1051, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1209, 33);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,42 +156,6 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
             this.adminToolStripMenuItem.Text = "Admin";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            this.borrowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.borrowToolStripMenuItem1,
-            this.returnToolStripMenuItem});
-            this.borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            this.borrowToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
-            this.borrowToolStripMenuItem.Text = "Library";
-            // 
-            // borrowToolStripMenuItem1
-            // 
-            this.borrowToolStripMenuItem1.Name = "borrowToolStripMenuItem1";
-            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
-            this.borrowToolStripMenuItem1.Text = "Borrow";
-            // 
-            // returnToolStripMenuItem
-            // 
-            this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            this.returnToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.returnToolStripMenuItem.Text = "Return";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
-            this.reportToolStripMenuItem.Text = "Report";
-            // 
-            // btnReport
-            // 
-            this.btnReport.Location = new System.Drawing.Point(25, 573);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(152, 69);
-            this.btnReport.TabIndex = 7;
-            this.btnReport.Text = "Reports";
-            this.btnReport.UseVisualStyleBackColor = true;
             // 
             // createToolStripMenuItem
             // 
@@ -258,13 +232,52 @@
             this.membersToolStripMenuItem.Size = new System.Drawing.Size(227, 30);
             this.membersToolStripMenuItem.Text = "Members";
             // 
+            // borrowToolStripMenuItem
+            // 
+            this.borrowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.borrowToolStripMenuItem1,
+            this.returnToolStripMenuItem});
+            this.borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
+            this.borrowToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
+            this.borrowToolStripMenuItem.Text = "Library";
+            // 
+            // borrowToolStripMenuItem1
+            // 
+            this.borrowToolStripMenuItem1.Name = "borrowToolStripMenuItem1";
+            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(154, 30);
+            this.borrowToolStripMenuItem1.Text = "Borrow";
+            // 
+            // returnToolStripMenuItem
+            // 
+            this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
+            this.returnToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
+            this.returnToolStripMenuItem.Text = "Return";
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
+            this.reportToolStripMenuItem.Text = "Report";
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnReport.Location = new System.Drawing.Point(28, 533);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(168, 64);
+            this.btnReport.TabIndex = 7;
+            this.btnReport.Text = "Reports";
+            this.btnReport.UseVisualStyleBackColor = false;
+            // 
             // FormMainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1051, 709);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1209, 688);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.btnRetrun);
@@ -272,8 +285,12 @@
             this.Controls.Add(this.btnAdminManage);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.MenuText;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormMainWindow";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Library System";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

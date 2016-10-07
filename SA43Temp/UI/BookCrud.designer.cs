@@ -76,6 +76,7 @@
             // 
             // gbBookInformation
             // 
+            this.gbBookInformation.BackColor = System.Drawing.Color.AntiqueWhite;
             this.gbBookInformation.Controls.Add(this.cbCategory);
             this.gbBookInformation.Controls.Add(this.lblISBN);
             this.gbBookInformation.Controls.Add(this.tbISBN);
@@ -97,6 +98,7 @@
             // 
             // cbCategory
             // 
+            this.cbCategory.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(243, 111);
             this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -189,6 +191,7 @@
             // 
             // gbBookStatus
             // 
+            this.gbBookStatus.BackColor = System.Drawing.Color.AntiqueWhite;
             this.gbBookStatus.Controls.Add(this.dtpCreatedate);
             this.gbBookStatus.Controls.Add(this.cbStatus);
             this.gbBookStatus.Controls.Add(this.lblStatus);

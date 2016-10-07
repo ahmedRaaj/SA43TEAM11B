@@ -32,67 +32,72 @@
             this.btnManagePulishers = new System.Windows.Forms.Button();
             this.btnManageCategories = new System.Windows.Forms.Button();
             this.btnManageMembers = new System.Windows.Forms.Button();
-            this.btnManageEmployee = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnManageEmployee = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnManageBooks
             // 
+            this.btnManageBooks.BackColor = System.Drawing.Color.Tan;
+            this.btnManageBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageBooks.ForeColor = System.Drawing.Color.Black;
             this.btnManageBooks.Location = new System.Drawing.Point(30, 57);
             this.btnManageBooks.Name = "btnManageBooks";
             this.btnManageBooks.Size = new System.Drawing.Size(283, 71);
             this.btnManageBooks.TabIndex = 0;
             this.btnManageBooks.Text = "Manage Books";
-            this.btnManageBooks.UseVisualStyleBackColor = true;
+            this.btnManageBooks.UseVisualStyleBackColor = false;
             this.btnManageBooks.Click += new System.EventHandler(this.btnManageBooks_Click);
             // 
             // btnManagePulishers
             // 
+            this.btnManagePulishers.BackColor = System.Drawing.Color.Tan;
+            this.btnManagePulishers.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManagePulishers.ForeColor = System.Drawing.Color.Black;
             this.btnManagePulishers.Location = new System.Drawing.Point(668, 57);
             this.btnManagePulishers.Name = "btnManagePulishers";
             this.btnManagePulishers.Size = new System.Drawing.Size(283, 71);
             this.btnManagePulishers.TabIndex = 1;
             this.btnManagePulishers.Text = "Manage Publishers";
-            this.btnManagePulishers.UseVisualStyleBackColor = true;
+            this.btnManagePulishers.UseVisualStyleBackColor = false;
             this.btnManagePulishers.Click += new System.EventHandler(this.btnManagePulishers_Click);
             // 
             // btnManageCategories
             // 
-            this.btnManageCategories.Location = new System.Drawing.Point(338, 57);
+            this.btnManageCategories.BackColor = System.Drawing.Color.Tan;
+            this.btnManageCategories.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageCategories.ForeColor = System.Drawing.Color.Black;
+            this.btnManageCategories.Location = new System.Drawing.Point(337, 57);
             this.btnManageCategories.Name = "btnManageCategories";
             this.btnManageCategories.Size = new System.Drawing.Size(283, 71);
             this.btnManageCategories.TabIndex = 2;
             this.btnManageCategories.Text = "Manage Categories";
-            this.btnManageCategories.UseVisualStyleBackColor = true;
+            this.btnManageCategories.UseVisualStyleBackColor = false;
             this.btnManageCategories.Click += new System.EventHandler(this.btnManageCategories_Click);
             // 
             // btnManageMembers
             // 
+            this.btnManageMembers.BackColor = System.Drawing.Color.Tan;
+            this.btnManageMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageMembers.ForeColor = System.Drawing.Color.Black;
             this.btnManageMembers.Location = new System.Drawing.Point(161, 75);
             this.btnManageMembers.Name = "btnManageMembers";
             this.btnManageMembers.Size = new System.Drawing.Size(283, 71);
             this.btnManageMembers.TabIndex = 3;
             this.btnManageMembers.Text = "Mange Members";
-            this.btnManageMembers.UseVisualStyleBackColor = true;
+            this.btnManageMembers.UseVisualStyleBackColor = false;
             this.btnManageMembers.Click += new System.EventHandler(this.btnManageMembers_Click);
-            // 
-            // btnManageEmployee
-            // 
-            this.btnManageEmployee.Location = new System.Drawing.Point(491, 75);
-            this.btnManageEmployee.Name = "btnManageEmployee";
-            this.btnManageEmployee.Size = new System.Drawing.Size(283, 71);
-            this.btnManageEmployee.TabIndex = 4;
-            this.btnManageEmployee.Text = "Manage Employee";
-            this.btnManageEmployee.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.btnManageEmployee);
             this.groupBox1.Controls.Add(this.btnManageMembers);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.groupBox1.Location = new System.Drawing.Point(42, 289);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1081, 210);
@@ -106,18 +111,33 @@
             this.groupBox2.Controls.Add(this.btnManageBooks);
             this.groupBox2.Controls.Add(this.btnManageCategories);
             this.groupBox2.Controls.Add(this.btnManagePulishers);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.groupBox2.Location = new System.Drawing.Point(42, 46);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1081, 187);
+            this.groupBox2.Size = new System.Drawing.Size(957, 155);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Books";
+            // 
+            // btnManageEmployee
+            // 
+            this.btnManageEmployee.BackColor = System.Drawing.Color.Tan;
+            this.btnManageEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnManageEmployee.Location = new System.Drawing.Point(491, 75);
+            this.btnManageEmployee.Name = "btnManageEmployee";
+            this.btnManageEmployee.Size = new System.Drawing.Size(283, 71);
+            this.btnManageEmployee.TabIndex = 4;
+            this.btnManageEmployee.Text = "Manage Employee";
+            this.btnManageEmployee.UseVisualStyleBackColor = false;
             // 
             // FormAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1158, 577);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -136,8 +156,8 @@
         private System.Windows.Forms.Button btnManagePulishers;
         private System.Windows.Forms.Button btnManageCategories;
         private System.Windows.Forms.Button btnManageMembers;
-        private System.Windows.Forms.Button btnManageEmployee;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnManageEmployee;
     }
 }

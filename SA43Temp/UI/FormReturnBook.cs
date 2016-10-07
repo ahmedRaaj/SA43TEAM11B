@@ -87,5 +87,10 @@ namespace LibraryManagementSystem.UI
         {
             this.Close();
         }
+
+        private void lblScanTpye_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,6 +54,7 @@
             // 
             // gbMemberInformation
             // 
+            this.gbMemberInformation.BackColor = System.Drawing.Color.White;
             this.gbMemberInformation.Controls.Add(this.tbMemberName);
             this.gbMemberInformation.Controls.Add(this.btnStart);
             this.gbMemberInformation.Controls.Add(this.btnSearchMembers);
@@ -64,7 +65,7 @@
             this.gbMemberInformation.Controls.Add(this.label1);
             this.gbMemberInformation.Location = new System.Drawing.Point(12, 29);
             this.gbMemberInformation.Name = "gbMemberInformation";
-            this.gbMemberInformation.Size = new System.Drawing.Size(1064, 174);
+            this.gbMemberInformation.Size = new System.Drawing.Size(1044, 174);
             this.gbMemberInformation.TabIndex = 0;
             this.gbMemberInformation.TabStop = false;
             this.gbMemberInformation.Text = "Member Information";
@@ -79,22 +80,24 @@
             // 
             // btnStart
             // 
+            this.btnStart.BackColor = System.Drawing.Color.BurlyWood;
             this.btnStart.Location = new System.Drawing.Point(950, 34);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(94, 30);
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnSearchMembers
             // 
+            this.btnSearchMembers.BackColor = System.Drawing.Color.BurlyWood;
             this.btnSearchMembers.Location = new System.Drawing.Point(480, 31);
             this.btnSearchMembers.Name = "btnSearchMembers";
             this.btnSearchMembers.Size = new System.Drawing.Size(63, 26);
             this.btnSearchMembers.TabIndex = 5;
             this.btnSearchMembers.Text = "...";
-            this.btnSearchMembers.UseVisualStyleBackColor = true;
+            this.btnSearchMembers.UseVisualStyleBackColor = false;
             this.btnSearchMembers.Click += new System.EventHandler(this.btnSearchMembers_Click);
             // 
             // label3
@@ -141,6 +144,7 @@
             // 
             // gbBooksInformation
             // 
+            this.gbBooksInformation.BackColor = System.Drawing.Color.White;
             this.gbBooksInformation.Controls.Add(this.btnCancel);
             this.gbBooksInformation.Controls.Add(this.btnSubmit);
             this.gbBooksInformation.Controls.Add(this.dgBorrowBooks);
@@ -159,27 +163,31 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.BurlyWood;
             this.btnCancel.Location = new System.Drawing.Point(902, 264);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(142, 41);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.BurlyWood;
             this.btnSubmit.Location = new System.Drawing.Point(741, 264);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(128, 41);
             this.btnSubmit.TabIndex = 13;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // dgBorrowBooks
             // 
+            this.dgBorrowBooks.BackgroundColor = System.Drawing.Color.White;
             this.dgBorrowBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBorrowBooks.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgBorrowBooks.Location = new System.Drawing.Point(17, 88);
             this.dgBorrowBooks.Name = "dgBorrowBooks";
             this.dgBorrowBooks.RowTemplate.Height = 28;
@@ -188,22 +196,24 @@
             // 
             // btnBorrow
             // 
+            this.btnBorrow.BackColor = System.Drawing.Color.BurlyWood;
             this.btnBorrow.Location = new System.Drawing.Point(950, 37);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(94, 28);
             this.btnBorrow.TabIndex = 7;
             this.btnBorrow.Text = "Borrow";
-            this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // btnSearchBooks
             // 
+            this.btnSearchBooks.BackColor = System.Drawing.Color.BurlyWood;
             this.btnSearchBooks.Location = new System.Drawing.Point(480, 38);
             this.btnSearchBooks.Name = "btnSearchBooks";
             this.btnSearchBooks.Size = new System.Drawing.Size(63, 27);
             this.btnSearchBooks.TabIndex = 11;
             this.btnSearchBooks.Text = "...";
-            this.btnSearchBooks.UseVisualStyleBackColor = true;
+            this.btnSearchBooks.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -241,6 +251,7 @@
             // FormBorrow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1107, 580);
             this.Controls.Add(this.gbBooksInformation);
             this.Controls.Add(this.gbMemberInformation);

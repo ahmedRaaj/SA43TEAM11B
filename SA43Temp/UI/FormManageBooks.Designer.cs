@@ -31,6 +31,10 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
+            // 
             // btnReset
             // 
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -55,6 +59,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.Name = "FormManageBooks";
             this.groupBox1.ResumeLayout(false);

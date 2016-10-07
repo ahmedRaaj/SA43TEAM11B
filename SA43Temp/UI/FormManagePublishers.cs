@@ -58,5 +58,10 @@ namespace LibraryManagementSystem.UI
                 PublisherController.Refresh();
             }
         }
+
+        private void FormManagePublishers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,8 +53,10 @@
             // 
             // FormManagePublishers
             // 
-            this.ClientSize = new System.Drawing.Size(1904, 1001);
+            this.BackColor = System.Drawing.Color.FloralWhite;
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.Name = "FormManagePublishers";
+            this.Load += new System.EventHandler(this.FormManagePublishers_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
