@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryManagementSystem.Controller;
 
 namespace LibraryManagementSystem.UI
 {
     public partial class FormLogIn : Form
     {
+    
+        public LoginController LoginController { get; set; }
+
         public FormLogIn()
         {
             InitializeComponent();
+        }
+
+        public FormLogIn(LoginController loginController):this()
+        {
+            LoginController = loginController;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -24,7 +33,26 @@ namespace LibraryManagementSystem.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           if(LoginController.LogIn(this.tbUserName.Text, this.tbPassword.Text))
+            {
+                MainController mainController = new MainController();
+                mainController.ShowMainWindow();
+                this.Hide();
+            }else if (LoginController.logInAttempt > 2)
+            {
+                this.ShowMessage("You Have Entered Maximum Time");
+                this.Dispose();
+            }
+          
+            
         }
+
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+       
+       
     }
 }

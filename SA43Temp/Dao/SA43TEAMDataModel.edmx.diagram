@@ -17,6 +17,7 @@
         <AssociationConnector Association="SA43TEAM11BModel.Book_PublisherFK" ManuallyRouted="false" />
         <AssociationConnector Association="SA43TEAM11BModel.BorrowingDetails_BookFK" ManuallyRouted="false" />
         <AssociationConnector Association="SA43TEAM11BModel.BorrowingDetails_MemeberFK" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SA43TEAM11BModel.CustomerRentedBook" Width="1.5" PointX="16.25" PointY="3.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

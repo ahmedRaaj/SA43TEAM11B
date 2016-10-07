@@ -39,10 +39,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 103);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(136, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 14);
+            this.label1.Size = new System.Drawing.Size(94, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
             // 
@@ -50,10 +49,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 159);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(141, 265);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 14);
+            this.label2.Size = new System.Drawing.Size(90, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -61,29 +59,26 @@
             // tbUserName
             // 
             this.tbUserName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUserName.Location = new System.Drawing.Point(160, 100);
-            this.tbUserName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbUserName.Location = new System.Drawing.Point(240, 167);
             this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(200, 22);
+            this.tbUserName.Size = new System.Drawing.Size(298, 29);
             this.tbUserName.TabIndex = 2;
             // 
             // tbPassword
             // 
             this.tbPassword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(160, 156);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPassword.Location = new System.Drawing.Point(240, 260);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(200, 22);
+            this.tbPassword.Size = new System.Drawing.Size(298, 29);
             this.tbPassword.TabIndex = 3;
             // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.BurlyWood;
             this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogIn.Location = new System.Drawing.Point(260, 202);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogIn.Location = new System.Drawing.Point(390, 337);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(100, 40);
+            this.btnLogIn.Size = new System.Drawing.Size(150, 67);
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Login";
             this.btnLogIn.UseVisualStyleBackColor = false;
@@ -91,16 +86,15 @@
             // 
             // FormLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(726, 602);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogIn";
             this.Text = "LogIn";
             this.ResumeLayout(false);

@@ -89,6 +89,9 @@
       <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Dao\CategoryDao.cs" />
+    <Compile Include="Dao\CustomerRentedBook.cs">
+      <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Dao\Employee.cs">
       <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
     </Compile>

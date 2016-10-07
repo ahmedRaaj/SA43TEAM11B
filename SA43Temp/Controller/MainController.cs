@@ -17,7 +17,10 @@ namespace LibraryManagementSystem.Controller
             FormMainWindow = new FormMainWindow();
         }
 
-
+        public void ShowMainWindow()
+        {
+            FormMainWindow.Show();
+        }
 
     }
 }

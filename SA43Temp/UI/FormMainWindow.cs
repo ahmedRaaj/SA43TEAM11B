@@ -230,5 +230,12 @@ namespace LibraryManagementSystem.UI
             ShowInMainPanel(formRpt);
             formRpt.Show();
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            Application.Exit();
+        }
+
     }
 }

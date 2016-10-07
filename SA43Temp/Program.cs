@@ -18,8 +18,12 @@ namespace SA43Temp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MainController mainController = new MainController();
-            Application.Run(mainController.FormMainWindow);
+          
+
+            LoginController logIn = new LoginController();
+           // logIn.ShowLogInScreen();
+            
+            Application.Run(logIn.FormLogIn);
         }
     }
 }

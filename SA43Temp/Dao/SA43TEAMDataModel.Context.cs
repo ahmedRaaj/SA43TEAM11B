@@ -32,5 +32,6 @@ namespace LibraryManagementSystem.Dao
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<Publisher> Publishers { get; set; }
+        public virtual DbSet<CustomerRentedBook> CustomerRentedBooks { get; set; }
     }
 }

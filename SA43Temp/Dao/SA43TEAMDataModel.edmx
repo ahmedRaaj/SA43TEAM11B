@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SA43TEAM11BModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SA43TEAM11BModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BookCopies">
           <Key>
             <PropertyRef Name="BookID" />
@@ -81,6 +81,31 @@
           <Property Name="PublisherWeb" Type="nvarchar" MaxLength="100" />
           <Property Name="PublisherDetails" Type="nvarchar" MaxLength="200" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SA43TEAM11B.dbo.CustomerRentedBook' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CustomerRentedBook">
+          <Key>
+            <PropertyRef Name="BookName" />
+            <PropertyRef Name="MemberName" />
+            <PropertyRef Name="BorrowingID" />
+            <PropertyRef Name="BookID" />
+            <PropertyRef Name="MemberID" />
+            <PropertyRef Name="BorrowDate" />
+            <PropertyRef Name="ReturnDate" />
+            <PropertyRef Name="BorrowingStatus" />
+          </Key>
+          <Property Name="BookName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MemberName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="BorrowingID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BookID" Type="int" Nullable="false" />
+          <Property Name="MemberID" Type="int" Nullable="false" />
+          <Property Name="BorrowDate" Type="datetime" Nullable="false" />
+          <Property Name="ReturnDate" Type="datetime" Nullable="false" />
+          <Property Name="ActualReturnDate" Type="datetime" />
+          <Property Name="BorrowingStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="250" />
+          <Property Name="Fine" Type="float" />
+        </EntityType>
         <Association Name="Book_CategoryFK">
           <End Role="Category" Type="Self.Category" Multiplicity="1" />
           <End Role="Books" Type="Self.Books" Multiplicity="*" />
@@ -149,6 +174,21 @@
           <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Members" EntityType="Self.Members" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Publishers" EntityType="Self.Publishers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CustomerRentedBook" EntityType="Self.CustomerRentedBook" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CustomerRentedBook].[BookName] AS [BookName], 
+    [CustomerRentedBook].[MemberName] AS [MemberName], 
+    [CustomerRentedBook].[BorrowingID] AS [BorrowingID], 
+    [CustomerRentedBook].[BookID] AS [BookID], 
+    [CustomerRentedBook].[MemberID] AS [MemberID], 
+    [CustomerRentedBook].[BorrowDate] AS [BorrowDate], 
+    [CustomerRentedBook].[ReturnDate] AS [ReturnDate], 
+    [CustomerRentedBook].[ActualReturnDate] AS [ActualReturnDate], 
+    [CustomerRentedBook].[BorrowingStatus] AS [BorrowingStatus], 
+    [CustomerRentedBook].[Remarks] AS [Remarks], 
+    [CustomerRentedBook].[Fine] AS [Fine]
+    FROM [dbo].[CustomerRentedBook] AS [CustomerRentedBook]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="Book_CategoryFK" Association="Self.Book_CategoryFK">
             <End Role="Category" EntitySet="Category" />
             <End Role="Books" EntitySet="Books" />
@@ -170,8 +210,7 @@
             <End Role="BorrowingDetails" EntitySet="BorrowingDetails" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SA43TEAM11BModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -349,7 +388,31 @@
             <End Role="Members" EntitySet="Members" />
             <End Role="BorrowingDetails" EntitySet="BorrowingDetails" />
           </AssociationSet>
+          <EntitySet Name="CustomerRentedBooks" EntityType="SA43TEAM11BModel.CustomerRentedBook" />
         </EntityContainer>
+        <EntityType Name="CustomerRentedBook">
+          <Key>
+            <PropertyRef Name="BookName" />
+            <PropertyRef Name="MemberName" />
+            <PropertyRef Name="BorrowingID" />
+            <PropertyRef Name="BookID" />
+            <PropertyRef Name="MemberID" />
+            <PropertyRef Name="BorrowDate" />
+            <PropertyRef Name="ReturnDate" />
+            <PropertyRef Name="BorrowingStatus" />
+          </Key>
+          <Property Name="BookName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MemberName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="BorrowingID" Type="Guid" Nullable="false" />
+          <Property Name="BookID" Type="Int32" Nullable="false" />
+          <Property Name="MemberID" Type="Int32" Nullable="false" />
+          <Property Name="BorrowDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReturnDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ActualReturnDate" Type="DateTime" Precision="3" />
+          <Property Name="BorrowingStatus" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Fine" Type="Double" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -436,6 +499,23 @@
                 <ScalarProperty Name="PublisherName" ColumnName="PublisherName" />
                 <ScalarProperty Name="PublisherWeb" ColumnName="PublisherWeb" />
                 <ScalarProperty Name="PublisherDetails" ColumnName="PublisherDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerRentedBooks">
+            <EntityTypeMapping TypeName="SA43TEAM11BModel.CustomerRentedBook">
+              <MappingFragment StoreEntitySet="CustomerRentedBook">
+                <ScalarProperty Name="Fine" ColumnName="Fine" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="BorrowingStatus" ColumnName="BorrowingStatus" />
+                <ScalarProperty Name="ActualReturnDate" ColumnName="ActualReturnDate" />
+                <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+                <ScalarProperty Name="BorrowDate" ColumnName="BorrowDate" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="BorrowingID" ColumnName="BorrowingID" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="BookName" ColumnName="BookName" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
