@@ -1,5 +1,6 @@
 ﻿using LibraryManagementSystem.Controller;
 using LibraryManagementSystem.Dao;
+using LibraryManagementSystem.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +30,7 @@ namespace LibraryManagementSystem.UI
         {
             this.MemberController = memberContorller;
             this.create = create;
-            this.cbStatus.DataSource = memDao.Members.ToList() ;
+            this.cbStatus.DataSource = new string[] { MemberStatus.Active.ToString(),MemberStatus.Expired.ToString()};
 
         }
 

@@ -176,5 +176,34 @@ namespace LibraryManagementSystem.UI
             this.Close();
             Application.Exit();
         }
+
+        private void supplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PublisherController control = new PublisherController();
+           control.InitialCrud(true);        }
+
+        private void memberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MemberContoller control = new MemberContoller();
+            control.InitialCrud(true); 
+        }
+
+        private void membersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MemberContoller control = new MemberContoller();
+            control.ShowManageMeberForm();
+        }
+
+        private void borrowToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BorrowingController control = new BorrowingController();
+            control.ShowBorrowForm();
+        }
+
+        private void returnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReturningController control = new ReturningController();
+            control.ShowReturningForm();
+        }
     }
 }
