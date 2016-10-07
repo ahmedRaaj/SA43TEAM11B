@@ -188,6 +188,12 @@
     <Compile Include="UI\FormPublisherCrud.Designer.cs">
       <DependentUpon>FormPublisherCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormReturnBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormPublisherCrud.resx">
       <DependentUpon>FormPublisherCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormReturnBook.resx">
       <DependentUpon>FormReturnBook.cs</DependentUpon>
