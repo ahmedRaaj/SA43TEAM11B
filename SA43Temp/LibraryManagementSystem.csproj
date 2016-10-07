@@ -7,8 +7,8 @@
     <ProjectGuid>{96F1D96E-7AEA-4F65-87D0-3DDD3F01939A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SA43Temp</RootNamespace>
-    <AssemblyName>SA43Temp</AssemblyName>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -16,7 +16,20 @@ namespace LibraryManagementSystem.UI
         public FormManageCategories()
         {
             InitializeComponent();
+            this.dgv.DataSourceChanged += DgvCategorySourceChanged;
         }
+
+        private void DgvCategorySourceChanged(object sender, EventArgs e)
+        {
+            if(dgv.DataSource != null)
+            {
+                this.dgv.Columns["CategoryID"].Visible = false;
+                this.dgv.Columns["Books"].Visible = false;
+                this.dgv.Columns["CategoryName"].Width = 150;
+            }
+             
+        }
+
         public FormManageCategories(CategoryController con) : this()
         {
             CategoryController = con;
