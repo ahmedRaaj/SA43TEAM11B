@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbMemberInformation = new System.Windows.Forms.GroupBox();
+            this.tbMemberName = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnSearchMembers = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbBookScan = new System.Windows.Forms.TextBox();
             this.cmbBooksScanType = new System.Windows.Forms.ComboBox();
-            this.tbMemberName = new System.Windows.Forms.TextBox();
             this.gbMemberInformation.SuspendLayout();
             this.gbBooksInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgBorrowBooks)).BeginInit();
@@ -68,6 +68,14 @@
             this.gbMemberInformation.TabIndex = 0;
             this.gbMemberInformation.TabStop = false;
             this.gbMemberInformation.Text = "Member Information";
+            // 
+            // tbMemberName
+            // 
+            this.tbMemberName.Enabled = false;
+            this.tbMemberName.Location = new System.Drawing.Point(108, 106);
+            this.tbMemberName.Name = "tbMemberName";
+            this.tbMemberName.Size = new System.Drawing.Size(435, 26);
+            this.tbMemberName.TabIndex = 7;
             // 
             // btnStart
             // 
@@ -157,6 +165,7 @@
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSubmit
             // 
@@ -228,14 +237,6 @@
             this.cmbBooksScanType.Name = "cmbBooksScanType";
             this.cmbBooksScanType.Size = new System.Drawing.Size(262, 28);
             this.cmbBooksScanType.TabIndex = 8;
-            // 
-            // tbMemberName
-            // 
-            this.tbMemberName.Enabled = false;
-            this.tbMemberName.Location = new System.Drawing.Point(108, 106);
-            this.tbMemberName.Name = "tbMemberName";
-            this.tbMemberName.Size = new System.Drawing.Size(435, 26);
-            this.tbMemberName.TabIndex = 7;
             // 
             // FormBorrow
             // 

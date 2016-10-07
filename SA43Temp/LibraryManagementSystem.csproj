@@ -65,6 +65,7 @@
     <Compile Include="Controller\MemberContoller.cs" />
     <Compile Include="Controller\BookController.cs" />
     <Compile Include="Controller\PublisherController.cs" />
+    <Compile Include="Controller\ReturningController.cs" />
     <Compile Include="Dao\AbstaractDao.cs" />
     <Compile Include="Dao\Book.cs">
       <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
@@ -193,6 +194,7 @@
     <Compile Include="UI\FormReturnBook.designer.cs">
       <DependentUpon>FormReturnBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\BookStatus.cs" />
     <EmbeddedResource Include="UI\BookCrud.resx">
       <DependentUpon>BookCrud.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,9 +270,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Util\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Dao\SA43TEAMDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

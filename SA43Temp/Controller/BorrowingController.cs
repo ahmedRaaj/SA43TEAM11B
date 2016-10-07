@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SA43Temp.UI;
 using SA43Temp.Dao;
 using System.Windows.Forms;
+using LibraryManagementSystem.Util;
 
 namespace SA43Temp.Controller
 {
@@ -19,6 +20,7 @@ namespace SA43Temp.Controller
             { if (_borrowBookList == null) _borrowBookList = new HashSet<Book>();
                 return _borrowBookList;
             }
+           
         }
         public FormBorrow FormBorrow { get; private set; }
 
@@ -81,12 +83,20 @@ namespace SA43Temp.Controller
         public void AddForBorrow(int id)
         {
 
-          Book book  =  bookDao.BookList.Where(b => b.BookID == id).ToList().FirstOrDefault();
+          Book book  =  bookDao.ct.Books.Where(b => b.BookID == id && b.Status.Equals(BookStatus.Available.ToString())).ToList().FirstOrDefault();
           if(book != null)
             {
-                BorrowBookList.Add(book);
-                FormBorrow.dgBorrowBooks.DataSource = null;
-                FormBorrow.dgBorrowBooks.DataSource = BorrowBookList.ToList();
+                if (book.Status.Equals(BookStatus.Available.ToString()))
+                {
+                    BorrowBookList.Add(book);
+                    FormBorrow.dgBorrowBooks.DataSource = null;
+                    FormBorrow.dgBorrowBooks.DataSource = BorrowBookList.ToList();
+                }
+                else
+                {
+                    FormBorrow.ShowMessage("This Book is Already OnRent, Return The Book First");
+                }
+               
            
             }
             else
@@ -94,6 +104,17 @@ namespace SA43Temp.Controller
                 FormBorrow.ShowMessage("No Book found");
             }
           
+        }
+
+        public void Reset()
+        {
+            this.Member = null;
+            this._borrowBookList = null;
+           
+            FormBorrow.gbBooksInformation.Visible = false;
+            FormBorrow.dgBorrowBooks.DataSource = null;
+            FormBorrow.tbMemberScan.Text = "";
+            FormBorrow.tbBookScan.Text = "";
         }
 
         public void AddForBorrow(HashSet<Book> blist)
@@ -109,9 +130,7 @@ namespace SA43Temp.Controller
             if (this.Member != null && this.BorrowBookList.Count > 0)
             {
                 brrDetailsDao.BorrowBooks(this.Member, this.BorrowBookList);
-                this.Member = null;
-                this._borrowBookList = null;
-                this.FormBorrow.Close();
+               
             }
             else
             {

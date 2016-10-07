@@ -16,6 +16,11 @@ namespace SA43Temp.Dao
 
         public DbSet<Book> BookList { get { return ct.Books; } }
 
-      
+        public void UpdateBookStatus(int bookID, string bookStatus)
+        {
+            Book book = ct.Books.Where(b => b.BookID == bookID).ToList().FirstOrDefault();
+            book.Status = bookStatus;
+            ct.SaveChanges();
+        }
     }
 }

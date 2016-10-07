@@ -90,7 +90,6 @@ namespace SA43Temp.UI
             if (pnlMain.Controls.Count == 1)
             {
                 pnlMain.Controls.Remove(pnlMain.Controls[0]);
-                //pnlMain.Controls[0].Dispose();
             }
             BorrowingController brrControl = new BorrowingController();
             brrControl.FormBorrow.TopLevel = false;
@@ -116,8 +115,66 @@ namespace SA43Temp.UI
             if (pnlMain.Controls.Count == 1)
             {
                 pnlMain.Controls.Remove(pnlMain.Controls[0]);
-                //pnlMain.Controls[0].Dispose();
+                
             }
+        }
+
+        private void btnRetrun_Click(object sender, EventArgs e)
+        {
+            if (pnlMain.Controls.Count == 1)
+            {
+                pnlMain.Controls.Remove(pnlMain.Controls[0]);
+            }
+            ReturningController rControll = new ReturningController();
+            rControll.FormRetrunBook.TopLevel = false;
+            rControll.FormRetrunBook.FormBorderStyle = FormBorderStyle.None;
+
+            pnlMain.SuspendLayout();
+
+            rControll.FormRetrunBook.Dock = DockStyle.Fill;
+           // rControll.FormRetrunBook.AutoSize = true;
+            pnlMain.Controls.Add(rControll.FormRetrunBook);
+
+            pnlMain.ResumeLayout(false);
+            pnlMain.PerformLayout();
+
+            rControll.ShowReturningForm();
+        }
+
+        private void bookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookController controler = new BookController();
+            controler.InitiateCrud(true);
+        }
+
+        private void bookCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoryController controler = new CategoryController();
+            controler.InitiateCrud(true);
+        }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookController controler = new BookController();
+            controler.ShowManageBookForm();
+        }
+
+        private void bookCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoryController controler = new CategoryController();
+            controler.ShowManageCategoryForm();
+        }
+
+        private void publishersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PublisherController controller = new PublisherController();
+            controller.ShowManagePublisherForm();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
         }
     }
 }

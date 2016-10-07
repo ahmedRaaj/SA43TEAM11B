@@ -50,9 +50,21 @@ namespace SA43Temp.UI
           
 
             if (type.Equals("MemberID"))
+
             {
-                int id = Convert.ToInt32(tbMemberScan.Text);
-                BorrowingController.SetMember(id);
+                try
+                {
+                    int id = Convert.ToInt32(tbMemberScan.Text);
+                    BorrowingController.SetMember(id);
+                }
+                catch (System.FormatException exe)
+                {
+                    MessageBox.Show("Enter Correct Value");
+                    
+                }
+
+               
+
             }
             else if (type.Equals("MemberName"))
             {
@@ -69,6 +81,7 @@ namespace SA43Temp.UI
             {
                 gbBooksInformation.Visible = false;
                 tbMemberName.Text = "";
+                tbMemberScan.Text = "";
                 MessageBox.Show("Member Not Found");
             }
 
@@ -83,6 +96,12 @@ namespace SA43Temp.UI
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             BorrowingController.ConfirmBorrowing();
+            BorrowingController.Reset();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
