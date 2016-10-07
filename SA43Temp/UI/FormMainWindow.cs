@@ -213,5 +213,12 @@ namespace LibraryManagementSystem.UI
             ShowInMainPanel(con.FormBorrow);
             con.FormBorrow.Show();
         }
+
+        private void returnToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ReturningController con = new ReturningController();
+            ShowInMainPanel(con.FormRetrunBook);
+            con.ShowReturningForm();
+        }
     }
 }

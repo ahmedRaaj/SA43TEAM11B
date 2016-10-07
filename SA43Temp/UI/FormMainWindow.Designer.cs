@@ -163,7 +163,7 @@
             this.bookCategoryToolStripMenuItem,
             this.memberToolStripMenuItem});
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(161, 30);
             this.createToolStripMenuItem.Text = "Create";
             // 
             // bookToolStripMenuItem
@@ -250,8 +250,9 @@
             // returnToolStripMenuItem
             // 
             this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            this.returnToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
+            this.returnToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.returnToolStripMenuItem.Text = "Return";
+            this.returnToolStripMenuItem.Click += new System.EventHandler(this.returnToolStripMenuItem_Click_1);
             // 
             // reportToolStripMenuItem
             // 
