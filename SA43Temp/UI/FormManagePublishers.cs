@@ -16,6 +16,14 @@ namespace LibraryManagementSystem.UI
         public FormManagePublishers()
         {
             InitializeComponent();
+            this.dgv.DataSourceChanged += DgvPublisherSourceChanged;
+        }
+
+        private void DgvPublisherSourceChanged(object sender, EventArgs e)
+        {
+            /// throw new NotImplementedException();
+            this.dgv.Columns["PublisherID"].Visible = false;
+            this.dgv.Columns["Books"].Visible = false;
         }
 
         public FormManagePublishers(PublisherController controller) : this(){

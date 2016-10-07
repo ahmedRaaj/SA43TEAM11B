@@ -26,6 +26,7 @@ namespace LibraryManagementSystem.UI
                 this.dgv.Columns["CategoryID"].Visible = false;
                 this.dgv.Columns["Books"].Visible = false;
                 this.dgv.Columns["CategoryName"].Width = 150;
+                //MessageBox.Show("gd changed");
             }
              
         }
