@@ -243,14 +243,14 @@
             // borrowToolStripMenuItem1
             // 
             this.borrowToolStripMenuItem1.Name = "borrowToolStripMenuItem1";
-            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
+            this.borrowToolStripMenuItem1.Size = new System.Drawing.Size(154, 30);
             this.borrowToolStripMenuItem1.Text = "Borrow";
             this.borrowToolStripMenuItem1.Click += new System.EventHandler(this.borrowToolStripMenuItem1_Click_1);
             // 
             // returnToolStripMenuItem
             // 
             this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            this.returnToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.returnToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.returnToolStripMenuItem.Text = "Return";
             this.returnToolStripMenuItem.Click += new System.EventHandler(this.returnToolStripMenuItem_Click_1);
             // 
@@ -270,6 +270,7 @@
             this.btnReport.TabIndex = 7;
             this.btnReport.Text = "Reports";
             this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // FormMainWindow
             // 

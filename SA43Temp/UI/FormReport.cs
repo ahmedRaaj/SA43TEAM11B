@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem.Report;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace LibraryManagementSystem.UI
         public FormReport()
         {
             InitializeComponent();
+        }
+
+        private void btnBookList_Click(object sender, EventArgs e)
+        {
+            CRBookListForm crfrom = new CRBookListForm();
+            crfrom.Show();
         }
     }
 }

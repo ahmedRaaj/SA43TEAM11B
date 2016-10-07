@@ -108,14 +108,13 @@ namespace LibraryManagementSystem.UI
 
         private void btnMain_Click(object sender, EventArgs e)
         {
-            //if (pnlMain.Controls.Count == 1)
-            //{
-            //    pnlMain.Controls.Remove(pnlMain.Controls[0]);
+            if (pnlMain.Controls.Count == 1)
+            {
+                pnlMain.Controls.Remove(pnlMain.Controls[0]);
 
-            //}
+            }
 
-            CRBookListForm crfrom = new CRBookListForm();
-            crfrom.Show();
+
         }
 
         private void btnRetrun_Click(object sender, EventArgs e)
@@ -223,6 +222,13 @@ namespace LibraryManagementSystem.UI
             ReturningController con = new ReturningController();
             ShowInMainPanel(con.FormRetrunBook);
             con.ShowReturningForm();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            FormReport formRpt = new FormReport();
+            ShowInMainPanel(formRpt);
+            formRpt.Show();
         }
     }
 }

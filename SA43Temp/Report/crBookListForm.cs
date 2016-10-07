@@ -23,7 +23,7 @@ namespace LibraryManagementSystem.Report
         {
             BookDao dao = new BookDao();
             crBookList bReport = new crBookList();
-            bReport.SetDataSource( dao.BookList.Where(b=>b.Status == BookStatus.OnRent.ToString()));
+            bReport.SetDataSource( dao.BookList);
             crystalReportViewer1.ReportSource = bReport;
         }
     }

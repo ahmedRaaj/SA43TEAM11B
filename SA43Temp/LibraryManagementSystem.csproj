@@ -127,6 +127,12 @@
     <Compile Include="Report\CRBookListForm.Designer.cs">
       <DependentUpon>CRBookListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\BookCrud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\CRBookListForm.resx">
       <DependentUpon>CRBookListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BookCrud.resx">
       <DependentUpon>BookCrud.cs</DependentUpon>
