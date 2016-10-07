@@ -5,12 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using SA43Temp.Controller;
-using SA43Temp.Dao;
+using LibraryManagementSystem.Controller;
+using LibraryManagementSystem.Dao;
 
-namespace SA43Temp.UI
+namespace LibraryManagementSystem.UI
 {
-    public partial class FormManagePublishers : SA43Temp.UI.FormManageItemsTemplate
+    public partial class FormManagePublishers :FormManageItemsTemplate
     {
         public PublisherController   PublisherController { get; set; }
         public FormManagePublishers()

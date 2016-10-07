@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SA43Temp.Dao
+namespace LibraryManagementSystem.Dao
 {
     public class BorrowingDetailsDao : AbstaractDao<BorrowingDetail>
     {

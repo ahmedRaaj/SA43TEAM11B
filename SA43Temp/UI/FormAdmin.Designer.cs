@@ -1,4 +1,4 @@
-﻿namespace SA43Temp.UI
+﻿namespace LibraryManagementSystem.UI
 {
     partial class FormAdmin
     {

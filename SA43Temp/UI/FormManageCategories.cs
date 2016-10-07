@@ -1,5 +1,5 @@
-﻿using SA43Temp.Controller;
-using SA43Temp.Dao;
+﻿using LibraryManagementSystem.Controller;
+using LibraryManagementSystem.Dao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,9 +8,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SA43Temp.UI
+namespace LibraryManagementSystem.UI
 {
-    public partial class FormManageCategories : SA43Temp.UI.FormManageItemsTemplate
+    public partial class FormManageCategories : FormManageItemsTemplate
     {
        public CategoryController CategoryController { get; set; }
         public FormManageCategories()

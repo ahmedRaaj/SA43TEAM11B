@@ -1,11 +1,12 @@
-﻿using SA43Temp.Dao;
+﻿using LibraryManagementSystem.Dao;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
-using SA43Temp.UI;
+using LibraryManagementSystem.UI;
 using System;
 
-namespace SA43Temp.Controller
+
+namespace LibraryManagementSystem.Controller
 {
     public class CategoryController 
     {

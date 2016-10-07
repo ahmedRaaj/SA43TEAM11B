@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SA43Temp.UI;
-using SA43Temp.Dao;
+using LibraryManagementSystem.UI;
+using LibraryManagementSystem.Dao;
 using System.Windows.Forms;
 using LibraryManagementSystem.Util;
 
-namespace SA43Temp.Controller
+namespace LibraryManagementSystem.Controller
 {
    public class BorrowingController
     {

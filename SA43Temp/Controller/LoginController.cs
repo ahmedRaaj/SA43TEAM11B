@@ -1,11 +1,11 @@
-﻿using SA43Temp.UI;
+﻿using LibraryManagementSystem.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SA43Temp.Controller
+namespace LibraryManagementSystem.Controller
 {
     
     class LoginController

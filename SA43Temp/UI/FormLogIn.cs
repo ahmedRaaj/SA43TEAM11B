@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SA43Temp.UI
+namespace LibraryManagementSystem.UI
 {
     public partial class FormLogIn : Form
     {

@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SA43Temp.Controller;
-using SA43Temp.Dao;
+using LibraryManagementSystem.Controller;
+using LibraryManagementSystem.Dao;
 
-namespace SA43Temp.UI
+namespace LibraryManagementSystem.UI
 {
     public partial class FormBorrow : Form
     {
