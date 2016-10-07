@@ -3,17 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.UI;
-using LibraryManagementSystem.Dao;
-namespace LibraryManagementSystem.Controller
+using SA43Temp.UI;
+using SA43Temp.Dao;
+namespace SA43Temp.Controller
 {
    public class MemberContoller
     {
        public FormManageMembers FormManageMember { get; set; }
        private MemberDao memDao = new MemberDao();
+        private List<Member> MemberList;
 
-        private List<Member> _memberList;
+        //public List<Member> MemberList
+        //{
+        //    get
+        //    {
+        //        if (memberList == null) memberList = memDao.Members.ToList();
+        //        return memberList;
+        //    }
+        //}
 
+        private DateTime Date = DateTime.Now.Date;
 
         public MemberContoller()
         {
@@ -26,10 +35,22 @@ namespace LibraryManagementSystem.Controller
         {
             get
             {
-                if (_memberList == null) _memberList = memDao.Members.ToList();
-                return _memberList;
+                if (MemberList == null) MemberList = memDao.Members.ToList();
+                return MemberList;
             }
         }
+
+        public void InitialCrud(bool create)
+        {
+            FormMemberCrud FromMember = new FormMemberCrud(this, create);
+            if (!create)
+            {
+                Member m = FormManageMember.dgv.SelectedRows[0].DataBoundItem as Member;
+                FromMember.UpdateFields(m.MemberID, m.MemberName, m.City, m.Address,m.Phone,m.Email,m.MembershipStatus,Date);
+            }
+            FromMember.Show();
+        }
+
 
         public void ShowManageMeberForm()
         {
@@ -37,7 +58,7 @@ namespace LibraryManagementSystem.Controller
         }
         public void Reset()
         {
-            _memberList = null;
+            MemberList = null;
         }
 
         public void Filter(string searchType, string keywords)
@@ -51,14 +72,22 @@ namespace LibraryManagementSystem.Controller
             if (searchType.Equals("ID"))
             {
                 int ID = Convert.ToInt32(keywords);
-                _memberList = _memberList.Where(m => m.MemberID == ID).ToList();
+                MemberList = MemberList.Where(m => m.MemberID == ID).ToList();
             }
             else if (searchType.Equals("MemberName"))
             {
-                _memberList = _memberList.Where(m => m.MemberName.Contains(keywords)).ToList();
+                MemberList = MemberList.Where(m => m.MemberName.Contains(keywords)).ToList();
             }
 
 
+        }
+
+        public void Refresh()
+        {
+            this.MemberList = null;
+
+            FormManageMember.dgv.DataSource = null;
+            FormManageMember.dgv.DataSource = Members;
         }
 
         public bool SaveMember(string memberName, string city, string address, string phone, string eMail)

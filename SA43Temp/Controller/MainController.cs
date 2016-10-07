@@ -1,4 +1,4 @@
-﻿using LibraryManagementSystem.UI;
+﻿using SA43Temp.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSystem.Controller
+namespace SA43Temp.Controller
 {
     public class MainController
     {

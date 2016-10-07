@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibraryManagementSystem.Controller;
+using SA43Temp.Controller;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
     public partial class FormCategoryCrud : Form
     {

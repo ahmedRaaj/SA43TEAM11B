@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibraryManagementSystem.Controller;
-using LibraryManagementSystem.Dao;
-namespace LibraryManagementSystem.UI
+using SA43Temp.Controller;
+using SA43Temp.Dao;
+namespace SA43Temp.UI
 {
     public partial class BookCrud : Form
     {

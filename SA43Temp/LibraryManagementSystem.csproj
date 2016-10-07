@@ -181,6 +181,12 @@
     <Compile Include="UI\FormMemberCrud.designer.cs">
       <DependentUpon>FormMemberCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormPublisherCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormPublisherCrud.Designer.cs">
+      <DependentUpon>FormPublisherCrud.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormReturnBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     <EmbeddedResource Include="UI\FormMemberCrud.resx">
       <DependentUpon>FormMemberCrud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormPublisherCrud.resx">
+      <DependentUpon>FormPublisherCrud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FormReturnBook.resx">
       <DependentUpon>FormReturnBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,7 +264,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Util\" />

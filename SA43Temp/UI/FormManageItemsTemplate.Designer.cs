@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSystem.UI
+﻿namespace SA43Temp.UI
 {
     partial class FormManageItemsTemplate
     {

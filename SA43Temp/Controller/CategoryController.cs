@@ -1,11 +1,11 @@
-﻿using LibraryManagementSystem.Dao;
+﻿using SA43Temp.Dao;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
-using LibraryManagementSystem.UI;
+using SA43Temp.UI;
 using System;
 
-namespace LibraryManagementSystem.Controller
+namespace SA43Temp.Controller
 {
     public class CategoryController 
     {
@@ -90,7 +90,7 @@ namespace LibraryManagementSystem.Controller
             category.Details = categoryDetail;
             catDao.Add(category);
 
-            if (category.CategoryID != null)
+            if (category != null)
                 return true;
             else
                 return false;

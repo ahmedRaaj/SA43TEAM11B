@@ -5,11 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using LibraryManagementSystem.Controller;
+using SA43Temp.Controller;
+using SA43Temp.Dao;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
-    public partial class FormManagePublishers : LibraryManagementSystem.UI.FormManageItemsTemplate
+    public partial class FormManagePublishers : SA43Temp.UI.FormManageItemsTemplate
     {
         public PublisherController   PublisherController { get; set; }
         public FormManagePublishers()
@@ -32,6 +33,30 @@ namespace LibraryManagementSystem.UI
         {
             PublisherController.Refresh();
             dgv.DataSource = PublisherController.CategoryList;
+        }
+
+        private void btnCreateNew_Click(object sender, EventArgs e)
+        {
+            //PublisherController
+            PublisherController.InitialCrud(true);
+            PublisherController.Refresh();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            PublisherController.InitialCrud(false);
+            PublisherController.Refresh();
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Publisher p = dgv.SelectedRows[0].DataBoundItem as Publisher;
+            if (PublisherController.DeletePublisher(p.PublisherID))
+            {
+                MessageBox.Show("Delete Success");
+                PublisherController.Refresh();
+            }
         }
     }
 }

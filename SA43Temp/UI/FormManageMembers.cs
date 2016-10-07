@@ -5,13 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using LibraryManagementSystem.Controller;
+using SA43Temp.Controller;
+using SA43Temp.Dao;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
-    public partial class FormManageMembers : LibraryManagementSystem.UI.FormManageItemsTemplate
+    public partial class FormManageMembers : SA43Temp.UI.FormManageItemsTemplate
     {
-      public MemberContoller MemberController { get; set; }
+        public MemberContoller MemberController { get; set; }
         public FormManageMembers()
         {
             InitializeComponent();
@@ -33,6 +34,29 @@ namespace LibraryManagementSystem.UI
         {
             MemberController.Reset();
             dgv.DataSource = MemberController.Members;
+        }
+
+        private void btnCreateNew_Click(object sender, EventArgs e)
+        {
+            MemberController.InitialCrud(true);
+            MemberController.Refresh();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            MemberController.InitialCrud(false);
+            MemberController.Refresh();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Member m = dgv.SelectedRows[0].DataBoundItem as Member;
+            if (MemberController.DaleteMember(m.MemberID))
+            {
+                MessageBox.Show("Delete Success");
+                MemberController.Refresh();
+
+            }
         }
     }
 }

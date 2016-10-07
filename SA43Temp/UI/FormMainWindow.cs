@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.Controller;
-using LibraryManagementSystem.Dao;
+﻿using SA43Temp.Controller;
+using SA43Temp.Dao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
     public partial class FormMainWindow : Form
     {

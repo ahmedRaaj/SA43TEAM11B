@@ -1,4 +1,4 @@
-﻿using LibraryManagementSystem.Controller;
+﻿using SA43Temp.Controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
     public partial class FormAdmin : Form
     {

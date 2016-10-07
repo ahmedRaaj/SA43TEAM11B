@@ -1,11 +1,12 @@
-﻿using LibraryManagementSystem.Dao;
+﻿using SA43Temp.Dao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.UI;
-namespace LibraryManagementSystem.Controller
+using SA43Temp.UI;
+using SA43Temp.Dao;
+namespace SA43Temp.Controller
 {
    public class PublisherController
     {
@@ -27,8 +28,17 @@ namespace LibraryManagementSystem.Controller
             formPublishers = new FormManagePublishers(this);
             formPublishers.cmbSearchType.DataSource = new string[] { "ID", "PublisherName", "Details" };
 
+        }
 
-
+        public void InitialCrud(bool create)
+        {
+            FormPublisherCrud FromPublisher = new FormPublisherCrud(this,create);
+            if (!create)
+            {
+                Publisher pub = formPublishers.dgv.SelectedRows[0].DataBoundItem as Publisher;
+                FromPublisher.UpdateFields(pub.PublisherID, pub.PublisherName, pub.PublisherWeb, pub.PublisherDetails);
+            }
+            FromPublisher.Show();
         }
         public void ShowManagePublisherForm()
         {
@@ -59,6 +69,49 @@ namespace LibraryManagementSystem.Controller
         public void Refresh()
         {
             this._publisherList = null;
+
+            formPublishers.dgv.DataSource = null;
+            formPublishers.dgv.DataSource = CategoryList;
+        }
+
+        public bool SavePublisher(string name,string website,string details)
+        {
+            Publisher pub = new Publisher();
+            pub.PublisherName = name;
+            pub.PublisherWeb = website;
+            pub.PublisherDetails = details;
+            pubDao.Add(pub);
+
+            if (pub != null)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool UpdatePublisher(int pubId, string name, string website, string details)
+        {
+            Publisher pub = pubDao.ct.Publishers.Where(p => p.PublisherID == pubId).ToList().FirstOrDefault();
+            if (pub != null)
+            {
+                pub.PublisherID = pubId;
+                pub.PublisherName = name;
+                pub.PublisherDetails = details;
+
+                pubDao.ct.SaveChanges();
+                return true;
+            }
+            else return false;
+        }
+        public bool DeletePublisher(int pubID)
+        {
+            Publisher pub = pubDao.ct.Publishers.Where(p => p.PublisherID == pubID).ToList().FirstOrDefault();
+            if (pub != null)
+            {
+                pubDao.Remove(pub);
+                return true;
+            }
+            else return false;
         }
     }
 }

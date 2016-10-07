@@ -5,12 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using LibraryManagementSystem.Controller;
-using LibraryManagementSystem.Dao;
+using SA43Temp.Controller;
+using SA43Temp.Dao;
 
-namespace LibraryManagementSystem.UI
+namespace SA43Temp.UI
 {
-    public partial class FormManageBooks : LibraryManagementSystem.UI.FormManageItemsTemplate
+    public partial class FormManageBooks : SA43Temp.UI.FormManageItemsTemplate
     {
         public BookController BookController { get; set; }
         public FormManageBooks(BookController controller): this()
@@ -26,11 +26,13 @@ namespace LibraryManagementSystem.UI
         private void btnCreateNew_Click(object sender, EventArgs e)
         {
             BookController.InitiateCrud(true); //creating new by sending create boolean true;
+            BookController.Refresh();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             BookController.InitiateCrud(false); //editing by sending create boolean false
+            BookController.Refresh();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

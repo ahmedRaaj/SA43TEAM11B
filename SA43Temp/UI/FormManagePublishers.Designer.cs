@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementSystem.UI
+﻿namespace SA43Temp.UI
 {
     partial class FormManagePublishers
     {
@@ -39,10 +39,21 @@
             // 
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
+            // btnCreateNew
+            // 
+            this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // FormManagePublishers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.ClientSize = new System.Drawing.Size(1265, 512);
+            this.ClientSize = new System.Drawing.Size(1904, 1001);
             this.Name = "FormManagePublishers";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

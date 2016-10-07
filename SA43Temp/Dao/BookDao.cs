@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Dao
+namespace SA43Temp.Dao
 {
     public class BookDao : AbstaractDao<Book>
     {

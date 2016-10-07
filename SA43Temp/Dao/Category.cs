@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibraryManagementSystem.Dao
+namespace SA43Temp.Dao
 {
     using System;
     using System.Collections.Generic;
