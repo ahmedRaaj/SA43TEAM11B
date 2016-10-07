@@ -292,6 +292,7 @@
             this.Name = "FormMainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Library System";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
