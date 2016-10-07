@@ -45,7 +45,8 @@ namespace LibraryManagementSystem.UI
 
         private void btnManageEmployee_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Under Development");
+            EmployeeController con = new EmployeeController();
+            con.ShowManageEmpForm();
         }
     }
 }

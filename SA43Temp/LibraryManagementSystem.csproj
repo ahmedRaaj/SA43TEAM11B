@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Controller\BorrowingController.cs" />
     <Compile Include="Controller\CategoryController.cs" />
+    <Compile Include="Controller\EmployeeController.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Controller\MemberContoller.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Dao\Employee.cs">
       <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Dao\EmployeeDao.cs" />
     <Compile Include="Dao\Member.cs">
       <DependentUpon>SA43TEAMDataModel.tt</DependentUpon>
     </Compile>
@@ -160,6 +162,12 @@
     <Compile Include="UI\FormCategoryCrud.designer.cs">
       <DependentUpon>FormCategoryCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormEmployeeCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormEmployeeCrud.Designer.cs">
+      <DependentUpon>FormEmployeeCrud.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +193,12 @@
     </Compile>
     <Compile Include="UI\FormManageCategories.Designer.cs">
       <DependentUpon>FormManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManageEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManageEmployee.Designer.cs">
+      <DependentUpon>FormManageEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormManageItemsTemplate.cs">
       <SubType>Form</SubType>
@@ -252,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormCategoryCrud.resx">
       <DependentUpon>FormCategoryCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormEmployeeCrud.resx">
+      <DependentUpon>FormEmployeeCrud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>

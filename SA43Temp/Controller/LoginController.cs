@@ -21,12 +21,9 @@ namespace LibraryManagementSystem.Controller
         public bool LogIn(string usrname,string password)
         {
             
-            if(usrname.Equals("Sharmila"))
+            if(usrname.Equals("venkat",StringComparison.OrdinalIgnoreCase))
             return true;
-            else if (usrname.Equals("Venkat") )
-            {
-                return true;
-            }
+           
             else
             {
                 logInAttempt++;
