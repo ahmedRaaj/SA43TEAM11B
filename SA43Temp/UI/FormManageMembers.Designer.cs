@@ -39,6 +39,10 @@
             // 
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(18, 41);
+            // 
             // btnCreateNew
             // 
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
@@ -53,8 +57,8 @@
             // 
             // FormManageMembers
             // 
-            this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1289, 542);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(1904, 1001);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageMembers";
             this.groupBox1.ResumeLayout(false);

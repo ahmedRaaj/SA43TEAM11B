@@ -54,24 +54,26 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(682, 642);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSave.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnSave.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(455, 385);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 35);
+            this.btnSave.Size = new System.Drawing.Size(75, 21);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(840, 642);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(550, 385);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(112, 35);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // gbBookInformation
@@ -87,105 +89,104 @@
             this.gbBookInformation.Controls.Add(this.lblAuthor);
             this.gbBookInformation.Controls.Add(this.tbAuthor);
             this.gbBookInformation.Controls.Add(this.lblBookName);
-            this.gbBookInformation.Location = new System.Drawing.Point(18, 18);
-            this.gbBookInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbBookInformation.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBookInformation.Location = new System.Drawing.Point(12, 11);
             this.gbBookInformation.Name = "gbBookInformation";
-            this.gbBookInformation.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbBookInformation.Size = new System.Drawing.Size(934, 301);
+            this.gbBookInformation.Size = new System.Drawing.Size(623, 181);
             this.gbBookInformation.TabIndex = 8;
             this.gbBookInformation.TabStop = false;
             this.gbBookInformation.Text = "Book Information";
             // 
             // cbCategory
             // 
+            this.cbCategory.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(243, 111);
-            this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbCategory.Location = new System.Drawing.Point(162, 67);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(428, 28);
+            this.cbCategory.Size = new System.Drawing.Size(287, 22);
             this.cbCategory.TabIndex = 15;
             // 
             // lblISBN
             // 
             this.lblISBN.AutoSize = true;
-            this.lblISBN.Location = new System.Drawing.Point(180, 254);
-            this.lblISBN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblISBN.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblISBN.Location = new System.Drawing.Point(119, 151);
             this.lblISBN.Name = "lblISBN";
-            this.lblISBN.Size = new System.Drawing.Size(51, 20);
+            this.lblISBN.Size = new System.Drawing.Size(37, 14);
             this.lblISBN.TabIndex = 8;
             this.lblISBN.Text = "ISBN:";
             // 
             // tbISBN
             // 
-            this.tbISBN.Location = new System.Drawing.Point(243, 249);
-            this.tbISBN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbISBN.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbISBN.Location = new System.Drawing.Point(162, 148);
             this.tbISBN.Name = "tbISBN";
-            this.tbISBN.Size = new System.Drawing.Size(428, 26);
+            this.tbISBN.Size = new System.Drawing.Size(287, 22);
             this.tbISBN.TabIndex = 9;
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(112, 115);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCategory.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Location = new System.Drawing.Point(65, 70);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(118, 20);
+            this.lblCategory.Size = new System.Drawing.Size(91, 14);
             this.lblCategory.TabIndex = 14;
             this.lblCategory.Text = "Book Category:";
             // 
             // cbPublisher
             // 
+            this.cbPublisher.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPublisher.FormattingEnabled = true;
-            this.cbPublisher.Location = new System.Drawing.Point(243, 158);
-            this.cbPublisher.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbPublisher.Location = new System.Drawing.Point(162, 94);
             this.cbPublisher.Name = "cbPublisher";
-            this.cbPublisher.Size = new System.Drawing.Size(428, 28);
+            this.cbPublisher.Size = new System.Drawing.Size(287, 22);
             this.cbPublisher.TabIndex = 13;
             // 
             // lblPublisher
             // 
             this.lblPublisher.AutoSize = true;
-            this.lblPublisher.Location = new System.Drawing.Point(144, 163);
-            this.lblPublisher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPublisher.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPublisher.Location = new System.Drawing.Point(90, 97);
             this.lblPublisher.Name = "lblPublisher";
-            this.lblPublisher.Size = new System.Drawing.Size(87, 20);
+            this.lblPublisher.Size = new System.Drawing.Size(66, 14);
             this.lblPublisher.TabIndex = 12;
             this.lblPublisher.Text = "Pubulisher:";
             // 
             // tbBookName
             // 
-            this.tbBookName.Location = new System.Drawing.Point(243, 66);
-            this.tbBookName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbBookName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBookName.Location = new System.Drawing.Point(162, 40);
             this.tbBookName.Name = "tbBookName";
-            this.tbBookName.Size = new System.Drawing.Size(428, 26);
+            this.tbBookName.Size = new System.Drawing.Size(287, 22);
             this.tbBookName.TabIndex = 5;
             // 
             // lblAuthor
             // 
             this.lblAuthor.AutoSize = true;
-            this.lblAuthor.Location = new System.Drawing.Point(171, 208);
-            this.lblAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAuthor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuthor.Location = new System.Drawing.Point(107, 124);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(61, 20);
+            this.lblAuthor.Size = new System.Drawing.Size(49, 14);
             this.lblAuthor.TabIndex = 6;
             this.lblAuthor.Text = "Author:";
             // 
             // tbAuthor
             // 
-            this.tbAuthor.Location = new System.Drawing.Point(243, 203);
-            this.tbAuthor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbAuthor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAuthor.Location = new System.Drawing.Point(162, 121);
             this.tbAuthor.Name = "tbAuthor";
-            this.tbAuthor.Size = new System.Drawing.Size(428, 26);
+            this.tbAuthor.Size = new System.Drawing.Size(287, 22);
             this.tbAuthor.TabIndex = 7;
             // 
             // lblBookName
             // 
             this.lblBookName.AutoSize = true;
-            this.lblBookName.Location = new System.Drawing.Point(134, 71);
-            this.lblBookName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBookName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookName.Location = new System.Drawing.Point(83, 43);
             this.lblBookName.Name = "lblBookName";
-            this.lblBookName.Size = new System.Drawing.Size(96, 20);
+            this.lblBookName.Size = new System.Drawing.Size(73, 14);
             this.lblBookName.TabIndex = 4;
             this.lblBookName.Text = "Book Name:";
             // 
@@ -198,84 +199,83 @@
             this.gbBookStatus.Controls.Add(this.lblCreateDate);
             this.gbBookStatus.Controls.Add(this.tbLocationDeatail);
             this.gbBookStatus.Controls.Add(this.lblLocationDetails);
-            this.gbBookStatus.Location = new System.Drawing.Point(18, 329);
-            this.gbBookStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbBookStatus.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBookStatus.Location = new System.Drawing.Point(12, 212);
             this.gbBookStatus.Name = "gbBookStatus";
-            this.gbBookStatus.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbBookStatus.Size = new System.Drawing.Size(934, 278);
+            this.gbBookStatus.Size = new System.Drawing.Size(623, 152);
             this.gbBookStatus.TabIndex = 9;
             this.gbBookStatus.TabStop = false;
             this.gbBookStatus.Text = "Book Status";
             // 
             // dtpCreatedate
             // 
-            this.dtpCreatedate.Location = new System.Drawing.Point(243, 85);
-            this.dtpCreatedate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpCreatedate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpCreatedate.Location = new System.Drawing.Point(162, 51);
             this.dtpCreatedate.Name = "dtpCreatedate";
-            this.dtpCreatedate.Size = new System.Drawing.Size(298, 26);
+            this.dtpCreatedate.Size = new System.Drawing.Size(287, 22);
             this.dtpCreatedate.TabIndex = 17;
             // 
             // cbStatus
             // 
+            this.cbStatus.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
             "Available",
             "On-Loan"});
-            this.cbStatus.Location = new System.Drawing.Point(243, 37);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbStatus.Location = new System.Drawing.Point(162, 22);
             this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(166, 28);
+            this.cbStatus.Size = new System.Drawing.Size(112, 22);
             this.cbStatus.TabIndex = 16;
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(171, 42);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(110, 25);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(60, 20);
+            this.lblStatus.Size = new System.Drawing.Size(46, 14);
             this.lblStatus.TabIndex = 16;
             this.lblStatus.Text = "Status:";
             // 
             // lblCreateDate
             // 
             this.lblCreateDate.AutoSize = true;
-            this.lblCreateDate.Location = new System.Drawing.Point(134, 94);
-            this.lblCreateDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCreateDate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateDate.Location = new System.Drawing.Point(83, 57);
             this.lblCreateDate.Name = "lblCreateDate";
-            this.lblCreateDate.Size = new System.Drawing.Size(100, 20);
+            this.lblCreateDate.Size = new System.Drawing.Size(77, 14);
             this.lblCreateDate.TabIndex = 14;
             this.lblCreateDate.Text = "Create Date:";
             // 
             // tbLocationDeatail
             // 
-            this.tbLocationDeatail.Location = new System.Drawing.Point(243, 129);
-            this.tbLocationDeatail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbLocationDeatail.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLocationDeatail.Location = new System.Drawing.Point(162, 77);
             this.tbLocationDeatail.Multiline = true;
             this.tbLocationDeatail.Name = "tbLocationDeatail";
-            this.tbLocationDeatail.Size = new System.Drawing.Size(428, 109);
+            this.tbLocationDeatail.Size = new System.Drawing.Size(287, 67);
             this.tbLocationDeatail.TabIndex = 11;
             // 
             // lblLocationDetails
             // 
             this.lblLocationDetails.AutoSize = true;
-            this.lblLocationDetails.Location = new System.Drawing.Point(102, 148);
-            this.lblLocationDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocationDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocationDetails.Location = new System.Drawing.Point(60, 80);
             this.lblLocationDetails.Name = "lblLocationDetails";
-            this.lblLocationDetails.Size = new System.Drawing.Size(127, 20);
+            this.lblLocationDetails.Size = new System.Drawing.Size(96, 14);
             this.lblLocationDetails.TabIndex = 10;
             this.lblLocationDetails.Text = "Location Details:";
             // 
             // BookCrud
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 744);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(652, 446);
             this.Controls.Add(this.gbBookStatus);
             this.Controls.Add(this.gbBookInformation);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BookCrud";
             this.Text = "Book Management";
             this.gbBookInformation.ResumeLayout(false);

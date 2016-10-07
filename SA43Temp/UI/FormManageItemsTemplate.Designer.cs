@@ -76,6 +76,7 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnReset.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(734, 25);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 46);
@@ -86,6 +87,7 @@
             // btnFilter
             // 
             this.btnFilter.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnFilter.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilter.Location = new System.Drawing.Point(628, 25);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(100, 46);
@@ -96,40 +98,45 @@
             // 
             // txbKeyword
             // 
+            this.txbKeyword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbKeyword.Location = new System.Drawing.Point(422, 35);
             this.txbKeyword.Name = "txbKeyword";
-            this.txbKeyword.Size = new System.Drawing.Size(173, 26);
+            this.txbKeyword.Size = new System.Drawing.Size(173, 22);
             this.txbKeyword.TabIndex = 3;
             // 
             // cmbSearchType
             // 
+            this.cmbSearchType.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSearchType.FormattingEnabled = true;
             this.cmbSearchType.Location = new System.Drawing.Point(125, 35);
             this.cmbSearchType.Name = "cmbSearchType";
-            this.cmbSearchType.Size = new System.Drawing.Size(166, 28);
+            this.cmbSearchType.Size = new System.Drawing.Size(166, 22);
             this.cmbSearchType.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(329, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(64, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Keywords:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(84, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Search Type: ";
             // 
             // btnCreateNew
             // 
             this.btnCreateNew.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnCreateNew.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateNew.Location = new System.Drawing.Point(511, 462);
             this.btnCreateNew.Name = "btnCreateNew";
             this.btnCreateNew.Size = new System.Drawing.Size(108, 38);
@@ -140,6 +147,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnEdit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(668, 462);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(108, 38);
@@ -150,6 +158,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(815, 462);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 38);
@@ -160,6 +169,7 @@
             // btnDetails
             // 
             this.btnDetails.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetails.Location = new System.Drawing.Point(352, 462);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Size = new System.Drawing.Size(108, 38);

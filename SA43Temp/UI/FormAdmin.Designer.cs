@@ -96,7 +96,7 @@
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.btnManageEmployee);
             this.groupBox1.Controls.Add(this.btnManageMembers);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.groupBox1.Location = new System.Drawing.Point(42, 289);
             this.groupBox1.Name = "groupBox1";
@@ -124,7 +124,7 @@
             this.groupBox2.Controls.Add(this.btnManageBooks);
             this.groupBox2.Controls.Add(this.btnManageCategories);
             this.groupBox2.Controls.Add(this.btnManagePulishers);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.groupBox2.Location = new System.Drawing.Point(42, 46);
             this.groupBox2.Name = "groupBox2";
