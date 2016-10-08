@@ -1,0 +1,32 @@
+Software specific requirements
+for Library Management System
+
+userName: Venkat
+password: 
+
+
+Product Functions
+Borrow books, return books, scan items(booksID starting from 1 to *) that belong to the library, to keep track of all library books status and member activities.
+Menaging Function:
+Add,Delete,details,Update of All books,members,categories,publishers,employee
+Reports of all Book
+other reports not done yet. 
+
+Coding Pattern:
+Controller is used for generating Form and Doing the Operation. Also Data Access object is used for Data Access. 
+Folders:
+Controller  //having the all Controllers
+UI          //having the all WinForm
+DAO         //having the all Data Access Object
+UTILL       // having some utility class's 
+
+
+Operating Environment
+The Library Management System should operate on Microsoft Windows 10 and 7 plus. 
+
+User Knowledge Requirements
+Users of the system would be Librarians(staff), and the library manager of each library branches. 
+
+
+Dependencies
+The product needs .Net 4.5 above and Microsoft SQL server to store and access changes to database.
