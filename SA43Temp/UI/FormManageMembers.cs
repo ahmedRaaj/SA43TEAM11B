@@ -77,5 +77,12 @@ namespace LibraryManagementSystem.UI
             MemberController.InitialCrud(false);
             MemberController.FormMemerCrud.DisableItemsForView();
         }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+          Member m =  dgv.SelectedRows[0].DataBoundItem as Member;
+          MemberController.SetMemberForBorrowing(m.MemberID);
+            this.Close();
+        }
     }
 }

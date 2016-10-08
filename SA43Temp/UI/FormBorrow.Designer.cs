@@ -224,6 +224,7 @@
             this.btnSearchBooks.TabIndex = 11;
             this.btnSearchBooks.Text = "...";
             this.btnSearchBooks.UseVisualStyleBackColor = false;
+            this.btnSearchBooks.Click += new System.EventHandler(this.btnSearchBooks_Click);
             // 
             // label4
             // 
@@ -299,6 +300,6 @@
         public System.Windows.Forms.ComboBox cmbBooksScanType;
         public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox tbMemberName;
+        public System.Windows.Forms.TextBox tbMemberName;
     }
 }

@@ -44,12 +44,11 @@
             this.btnDataDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbCreateEditDel = new System.Windows.Forms.GroupBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-   
+            this.gbCrud = new System.Windows.Forms.GroupBox();
+            this.btnSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.gbCreateEditDel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbCrud.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv
@@ -142,7 +141,7 @@
             // 
             // btnCreateNew
             // 
-            this.btnCreateNew.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnCreateNew.BackColor = System.Drawing.Color.Coral;
             this.btnCreateNew.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateNew.Location = new System.Drawing.Point(43, 25);
             this.btnCreateNew.Name = "btnCreateNew";
@@ -153,7 +152,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnEdit.BackColor = System.Drawing.Color.Coral;
             this.btnEdit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(169, 25);
             this.btnEdit.Name = "btnEdit";
@@ -164,7 +163,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnDelete.BackColor = System.Drawing.Color.Coral;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(296, 25);
             this.btnDelete.Name = "btnDelete";
@@ -175,7 +174,7 @@
             // 
             // btnDetails
             // 
-            this.btnDetails.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnDetails.BackColor = System.Drawing.Color.Coral;
             this.btnDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetails.Location = new System.Drawing.Point(957, 589);
             this.btnDetails.Name = "btnDetails";
@@ -198,9 +197,6 @@
             // 
             // gbCreateEditDel
             // 
-            this.gbCreateEditDel.Controls.Add(this.btnEdit);
-            this.gbCreateEditDel.Controls.Add(this.btnCreateNew);
-            this.gbCreateEditDel.Controls.Add(this.btnDelete);
             this.gbCreateEditDel.Location = new System.Drawing.Point(295, 564);
             this.gbCreateEditDel.Name = "gbCreateEditDel";
             this.gbCreateEditDel.Size = new System.Drawing.Size(445, 82);
@@ -209,7 +205,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnClose.BackColor = System.Drawing.Color.Coral;
             this.btnClose.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(1111, 589);
             this.btnClose.Name = "btnClose";
@@ -219,31 +215,38 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // button1
+            // gbCrud
             // 
-     
+            this.gbCrud.Controls.Add(this.btnCreateNew);
+            this.gbCrud.Controls.Add(this.btnEdit);
+            this.gbCrud.Controls.Add(this.btnDelete);
+            this.gbCrud.Location = new System.Drawing.Point(295, 564);
+            this.gbCrud.Name = "gbCrud";
+            this.gbCrud.Size = new System.Drawing.Size(445, 82);
+            this.gbCrud.TabIndex = 6;
+            this.gbCrud.TabStop = false;
             // 
-            // groupBox2
+            // btnSelect
             // 
-            this.groupBox2.Controls.Add(this.btnCreateNew);
-            this.groupBox2.Controls.Add(this.btnEdit);
-            this.groupBox2.Controls.Add(this.btnDelete);
-            this.groupBox2.Location = new System.Drawing.Point(295, 564);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(445, 82);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-        
+            this.btnSelect.BackColor = System.Drawing.Color.Red;
+            this.btnSelect.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.Location = new System.Drawing.Point(755, 589);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(142, 38);
+            this.btnSelect.TabIndex = 5;
+            this.btnSelect.Text = "Select";
+            this.btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Visible = false;
             // 
             // FormManageItemsTemplate
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1314, 658);
+            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbCrud);
             this.Controls.Add(this.btnDetails);
-            this.Controls.Add(this.gbCreateEditDel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv);
             this.Name = "FormManageItemsTemplate";
@@ -252,8 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbCreateEditDel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.gbCrud.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -277,8 +279,7 @@
         public System.Windows.Forms.Button btnClose;
         public System.Windows.Forms.GroupBox gbCreateEditDel;
       
-        public System.Windows.Forms.GroupBox groupBox2;
-  
-    
+        public System.Windows.Forms.GroupBox gbCrud;
+        public System.Windows.Forms.Button btnSelect;
     }
 }

@@ -73,6 +73,17 @@ namespace LibraryManagementSystem.Controller
             }
         }
 
+        internal void GetMemberForMemberListForm()
+        {
+            MemberContoller memControl = new MemberContoller(this);
+            memControl.FormManageMember.btnSelect.Visible = true;
+            
+            memControl.FormManageMember.gbCrud.Dispose();
+           
+            memControl.ShowManageMeberForm();
+
+        }
+
         public void AddForBorrow(Book b)
         {
             if(this.Member != null)
@@ -109,6 +120,23 @@ namespace LibraryManagementSystem.Controller
                 FormBorrow.ShowMessage("This Book is Already OnRent, Return The Book First");
             }
           
+        }
+
+        internal void SetMemberFromList(int memberID)
+        {
+             Member = memberDao.ct.Members.Where(m => m.MemberID == memberID).ToList().FirstOrDefault();
+             if(Member != null)
+            {
+                FormBorrow.tbMemberName.Text = Member.MemberName;
+                FormBorrow.gbBooksInformation.Visible = true;
+            }
+          
+        }
+
+        internal void GetBooksFromBookListForm()
+        {
+            BookController con = new BookController(this);
+            con.ShowManageBookForm();
         }
 
         public void Reset()

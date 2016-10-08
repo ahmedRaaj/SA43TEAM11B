@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1.SuspendLayout();
+            this.gbCrud.SuspendLayout();
             this.gbCreateEditDel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbCrud.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -76,7 +76,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbCreateEditDel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.gbCrud.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

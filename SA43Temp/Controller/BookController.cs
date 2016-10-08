@@ -16,6 +16,7 @@ namespace LibraryManagementSystem.Controller
         private BookDao bookDao = new BookDao();
 
         private List<Book> _bookList;
+        private BorrowingController borrowingController;
 
         public List<Book> BookList
         {
@@ -26,11 +27,21 @@ namespace LibraryManagementSystem.Controller
             }
         }
 
+        public List<Book> BookSelectedFromList { get; internal set; }
+
         public BookController()
         {
             FormManageBook = new FormManageBooks(this);
             FormManageBook.cmbSearchType.DataSource = new string[] { "ID", "BookName", "Details" };
 
+        }
+
+        public BookController(BorrowingController borrowingController):this()
+        {
+            this.borrowingController = borrowingController;
+            FormManageBook.gbCrud.Dispose();
+            FormManageBook.btnSelect.Visible = true;
+            FormManageBook.dgv.MultiSelect = true;
         }
 
         public void InitiateCrud(bool create)
@@ -39,7 +50,10 @@ namespace LibraryManagementSystem.Controller
             if (!create) // called for editing
             {
                 Book b = FormManageBook.dgv.SelectedRows[0].DataBoundItem as Book;
-                FormBookCrud.UpdateFields(b.BookID,b.BookName, b.Authors, b.ISBN, b.LocationDetails,b.Category.ToString(),b.Publisher.ToString(),b.Status);
+                if (b != null)
+                    FormBookCrud.UpdateFields(b.BookID, b.BookName, b.Authors, b.ISBN, b.LocationDetails, b.Category.ToString(), b.Publisher.ToString(), b.Status);
+                else
+                    return;
                 
             }
 
@@ -99,6 +113,19 @@ namespace LibraryManagementSystem.Controller
                 return true;
             else
                 return false;
+        }
+
+        internal void SetBooksForBorrowing()
+        {
+            if(BookSelectedFromList.Count > 0)
+            {
+                foreach (Book b in BookSelectedFromList)
+                {
+                    borrowingController.AddForBorrow(b.BookID);
+                   // borrowingController.BorrowBookList.Add(b);
+                }
+               
+            }
         }
 
         public bool UpdateBook(int bookID, string bookName, int categoryID, int publisherID, string authors, string isbn, string locationDetails,string status)

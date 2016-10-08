@@ -51,7 +51,7 @@ namespace LibraryManagementSystem.UI
 
         private void btnSearchMembers_Click(object sender, EventArgs e)
         {
-            
+            BorrowingController.GetMemberForMemberListForm();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -118,6 +118,11 @@ namespace LibraryManagementSystem.UI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSearchBooks_Click(object sender, EventArgs e)
+        {
+            BorrowingController.GetBooksFromBookListForm();
         }
     }
 }

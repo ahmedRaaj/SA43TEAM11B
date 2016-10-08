@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
-            this.gbCreateEditDel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbCrud.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,9 +60,9 @@
             // 
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
-            // button3
+            // btnSelect
             // 
-          
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // FormManageBooks
             // 
@@ -75,8 +74,7 @@
             this.Name = "FormManageBooks";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbCreateEditDel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.gbCrud.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

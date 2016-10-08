@@ -24,12 +24,18 @@ namespace LibraryManagementSystem.Controller
         //}
 
         private DateTime Date = DateTime.Now.Date;
+        private BorrowingController borrowingController;
 
         public MemberContoller()
         {
             FormManageMember = new FormManageMembers(this);
          
             FormManageMember.cmbSearchType.DataSource = new string[] { "ID", "MemberName", "Details" };
+        }
+
+        public MemberContoller(BorrowingController borrowingController) :this()
+        {
+            this.borrowingController = borrowingController;
         }
 
         public List<Member> Members
@@ -81,6 +87,11 @@ namespace LibraryManagementSystem.Controller
             }
 
 
+        }
+
+        internal void SetMemberForBorrowing(int memberID)
+        {
+            borrowingController.SetMemberFromList(memberID);
         }
 
         public void Refresh()

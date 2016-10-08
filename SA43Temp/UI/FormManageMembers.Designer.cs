@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
-            this.gbCreateEditDel.SuspendLayout();
+            this.gbCrud.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -64,15 +64,19 @@
             // 
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
+            // btnSelect
+            // 
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
             // FormManageMembers
             // 
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageMembers";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbCreateEditDel.ResumeLayout(false);
+            this.gbCrud.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

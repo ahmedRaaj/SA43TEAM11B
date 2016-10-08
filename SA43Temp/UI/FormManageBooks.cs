@@ -51,12 +51,23 @@ namespace LibraryManagementSystem.UI
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Book b =  dgv.SelectedRows[0].DataBoundItem as Book;
-           if(BookController.DeleteBook(b.BookID))
+            try
             {
-                MessageBox.Show("Success");
-                BookController.Refresh();
+                if (BookController.DeleteBook(b.BookID))
+                {
+                    MessageBox.Show("Success");
+                    BookController.Refresh();
+                }
             }
-           
+            catch (Exception)
+            {
+
+                MessageBox.Show("Can't Delete This Book as it belongs to some transaction record");
+                this.Dispose();
+
+            }
+
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -75,9 +86,19 @@ namespace LibraryManagementSystem.UI
             BookController.FormBookCrud.DisableItemsForView();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
+   
 
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            BookController.BookSelectedFromList = new List<Book>();
+            foreach (DataGridViewRow row in dgv.SelectedRows)
+            {
+                Book b = row.DataBoundItem as Book;
+            
+                BookController.BookSelectedFromList.Add(b);
+            }
+         BookController.SetBooksForBorrowing();
+            this.Dispose();
         }
     }
 }
