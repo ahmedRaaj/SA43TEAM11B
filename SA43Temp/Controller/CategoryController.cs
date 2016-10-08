@@ -12,7 +12,8 @@ namespace LibraryManagementSystem.Controller
     {
         private List<Category> _categoryList;
         private CategoryDao catDao;
-        public FormManageCategories fromManagerCategory { get; set; }
+        public FormManageCategories FormManageCategory { get; private set; }
+        public FormCategoryCrud FormCategoryCrud { get; private set; }
         public List<Category> CategoryList
         {
             get
@@ -25,8 +26,8 @@ namespace LibraryManagementSystem.Controller
         public CategoryController()
         {
             catDao = new CategoryDao();
-            fromManagerCategory = new FormManageCategories(this);
-            fromManagerCategory.cmbSearchType.DataSource = new string[]{"ID","CategoryName","Details" };
+            FormManageCategory = new FormManageCategories(this);
+            FormManageCategory.cmbSearchType.DataSource = new string[]{"ID","CategoryName","Details" };
 
            
            // cat.Message
@@ -34,14 +35,14 @@ namespace LibraryManagementSystem.Controller
         }
         public void ShowManageCategoryForm()
         {
-            fromManagerCategory.ShowDialog();
+            FormManageCategory.ShowDialog();
         }
 
         public void Filter(string searchType,string keywords)
         {
             if (keywords == null || keywords == "" || keywords == " ")
             {
-                fromManagerCategory.ShowMessage("Please input the keyword");
+                FormManageCategory.ShowMessage("Please input the keyword");
                 return;
             }
                 
@@ -60,14 +61,14 @@ namespace LibraryManagementSystem.Controller
 
         public void InitiateCrud(bool create)
         {
-            FormCategoryCrud catCrudForm = new FormCategoryCrud(this,create);
+            FormCategoryCrud = new FormCategoryCrud(this,create);
             if (!create)
             {
-                Category cat = fromManagerCategory.dgv.SelectedRows[0].DataBoundItem as Category;
-                catCrudForm.UpdateFields(cat.CategoryID, cat.CategoryName, cat.Details);
+                Category cat = FormManageCategory.dgv.SelectedRows[0].DataBoundItem as Category;
+                FormCategoryCrud.UpdateFields(cat.CategoryID, cat.CategoryName, cat.Details);
             }
-            
-            catCrudForm.ShowDialog();
+
+            FormCategoryCrud.Show();
 
         }
 
@@ -80,8 +81,8 @@ namespace LibraryManagementSystem.Controller
         public void Refresh()
         {
             this._categoryList = null;
-            fromManagerCategory.dgv.DataSource = null;
-            fromManagerCategory.dgv.DataSource = CategoryList;
+            FormManageCategory.dgv.DataSource = null;
+            FormManageCategory.dgv.DataSource = CategoryList;
 
         }
         public bool SaveCategory(string categoryName, string categoryDetail)

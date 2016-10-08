@@ -78,6 +78,16 @@ namespace LibraryManagementSystem.UI
         {
             this.Close();
         }
-   
+        public void DisableItemsForView()
+        {
+
+            this.tbDetials.Enabled = false;
+            this.tbPublisherName.Enabled = false;
+            this.tbWebsite.Enabled = false;
+
+
+            this.btnSave.Visible = false;
+        }
+
     }
 }

@@ -9,8 +9,9 @@ namespace LibraryManagementSystem.Controller
 {
    public class MemberContoller
     {
-       public FormManageMembers FormManageMember { get; set; }
+       public FormManageMembers FormManageMember { get; private set; }
        private MemberDao memDao = new MemberDao();
+        public FormMemberCrud FormMemerCrud { get; set; }
         private List<Member> MemberList;
 
         //public List<Member> MemberList
@@ -42,13 +43,13 @@ namespace LibraryManagementSystem.Controller
 
         public void InitialCrud(bool create)
         {
-            FormMemberCrud FromMember = new FormMemberCrud(this, create);
+            FormMemerCrud = new FormMemberCrud(this, create);
             if (!create)
             {
                 Member m = FormManageMember.dgv.SelectedRows[0].DataBoundItem as Member;
-                FromMember.UpdateFields(m.MemberID, m.MemberName, m.City, m.Address,m.Phone,m.Email,m.MembershipStatus,Date);
+                FormMemerCrud.UpdateFields(m.MemberID, m.MemberName, m.City, m.Address,m.Phone,m.Email,m.MembershipStatus,Date);
             }
-            FromMember.ShowDialog();
+            FormMemerCrud.Show();
         }
 
 

@@ -13,7 +13,7 @@ namespace LibraryManagementSystem.Controller
         private List<Publisher> _publisherList;
         private PublisherDao pubDao;
         private FormManagePublishers formPublishers;
-        private UI.FormPublisherCrud pubCrud;
+        public FormPublisherCrud FormPublisherCrud { get; private set; }
         public List<Publisher> CategoryList
         {
             get
@@ -33,13 +33,13 @@ namespace LibraryManagementSystem.Controller
 
         public void InitialCrud(bool create)
         {
-            FormPublisherCrud FromPublisher = new FormPublisherCrud(this,create);
+            FormPublisherCrud = new FormPublisherCrud(this,create);
             if (!create)
             {
                 Publisher pub = formPublishers.dgv.SelectedRows[0].DataBoundItem as Publisher;
-                FromPublisher.UpdateFields(pub.PublisherID, pub.PublisherName, pub.PublisherWeb, pub.PublisherDetails);
+                FormPublisherCrud.UpdateFields(pub.PublisherID, pub.PublisherName, pub.PublisherWeb, pub.PublisherDetails);
             }
-            FromPublisher.ShowDialog();
+            FormPublisherCrud.Show();
         }
         public void ShowManagePublisherForm()
         {

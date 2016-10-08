@@ -89,5 +89,18 @@ namespace LibraryManagementSystem.UI
             this.Close();
 
          }
+
+        public void DisableItemsForView()
+        {
+          //  MessageBox.Show("sssss");
+            this.tbAddress.Enabled = false;
+            this.tbCity.Enabled = false;
+            this.tbEmail.Enabled = false;
+            this.tbMemberName.Enabled = false;
+            this.tbPhone.Enabled = false;
+            this.dpkCreationDate.Enabled = false;
+            this.cbStatus.Enabled = false;
+            this.btnSave.Visible = false;
+        }
     }
 }

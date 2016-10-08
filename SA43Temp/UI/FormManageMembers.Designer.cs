@@ -55,6 +55,10 @@
             // 
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnDetails
+            // 
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+            // 
             // FormManageMembers
             // 
             this.BackColor = System.Drawing.Color.AntiqueWhite;

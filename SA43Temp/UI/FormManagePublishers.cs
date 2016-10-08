@@ -71,5 +71,11 @@ namespace LibraryManagementSystem.UI
         {
 
         }
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            PublisherController.InitialCrud(false);
+            PublisherController.FormPublisherCrud.DisableItemsForView();
+        }
     }
 }

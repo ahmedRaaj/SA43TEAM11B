@@ -31,10 +31,6 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(1241, 91);
-            // 
             // btnReset
             // 
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -54,6 +50,10 @@
             // btnDelete
             // 
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnDetails
+            // 
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // FormManagePublishers
             // 

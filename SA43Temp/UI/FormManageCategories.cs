@@ -58,9 +58,11 @@ namespace LibraryManagementSystem.UI
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-            Category cat = dgv.SelectedRows[0].DataBoundItem as Category;
-            MessageBox.Show(cat.CategoryID.ToString());
+            CategoryController.InitiateCrud(false);
+            CategoryController.FormCategoryCrud.DisableItemsForView();
         }
+
+   
 
         private void btnCreateNew_Click(object sender, EventArgs e)
         {

@@ -65,5 +65,14 @@ namespace LibraryManagementSystem.UI
             tbCategoryName.Text = catName;
             this.catID = catID;
         }
+
+        public void DisableItemsForView()
+        {
+
+            this.tbCategoryDetails.Enabled = false;
+            this.tbCategoryName.Enabled = false;
+
+            this.btnSave.Visible = false;
+        }
     }
 }
