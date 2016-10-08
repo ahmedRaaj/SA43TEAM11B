@@ -1,50 +1,44 @@
-﻿using LibraryManagementSystem.Controller;
-using LibraryManagementSystem.Dao;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using LibraryManagementSystem.Controller;
+using LibraryManagementSystem.Dao;
 
 namespace LibraryManagementSystem.UI
 {
-    public partial class FormManageCategories : FormManageItemsTemplate
+    public partial class FormManageCategories : LibraryManagementSystem.UI.FormManageItemsTemplate
     {
-       public CategoryController CategoryController { get; set; }
+        public CategoryController CategoryController { get; set; }
         public FormManageCategories()
         {
             InitializeComponent();
             this.dgv.DataSourceChanged += DgvCategorySourceChanged;
         }
 
-        private void DgvCategorySourceChanged(object sender, EventArgs e)
+        public void DgvCategorySourceChanged(object sender, EventArgs e)
         {
-            if(dgv.DataSource != null)
+            if (dgv.DataSource != null)
             {
                 this.dgv.Columns["CategoryID"].Visible = false;
                 this.dgv.Columns["Books"].Visible = false;
-                this.dgv.Columns["CategoryName"].Width = 150;
                 //MessageBox.Show("gd changed");
             }
-             
+
         }
 
         public FormManageCategories(CategoryController con) : this()
         {
             CategoryController = con;
-          
-        }
-
-        private void FormManageCategories_Load(object sender, EventArgs e)
-        {
             dgv.DataSource = CategoryController.CategoryList;
-            dgv.Columns["Books"].Visible = false;
-           
         }
 
-        private void btnFilter_Click(object sender, EventArgs e)
+       
+
+        public void btnFilter_Click(object sender, EventArgs e)
         {
             CategoryController.Filter(cmbSearchType.SelectedItem as string, txbKeyword.Text);
             dgv.DataSource = CategoryController.CategoryList;
@@ -56,25 +50,25 @@ namespace LibraryManagementSystem.UI
             dgv.DataSource = CategoryController.CategoryList;
         }
 
-        private void btnDetails_Click(object sender, EventArgs e)
+        public void btnDetails_Click(object sender, EventArgs e)
         {
             CategoryController.InitiateCrud(false);
             CategoryController.FormCategoryCrud.DisableItemsForView();
         }
 
-   
 
-        private void btnCreateNew_Click(object sender, EventArgs e)
+
+        public void btnCreateNew_Click(object sender, EventArgs e)
         {
             CategoryController.InitiateCrud(true);
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        public void btnEdit_Click(object sender, EventArgs e)
         {
             CategoryController.InitiateCrud(false);
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        public void btnDelete_Click(object sender, EventArgs e)
         {
             Category b = dgv.SelectedRows[0].DataBoundItem as Category;
             if (CategoryController.DeleteCategory(b.CategoryID))
@@ -82,6 +76,11 @@ namespace LibraryManagementSystem.UI
                 MessageBox.Show("Success");
                 CategoryController.Refresh();
             }
+        }
+
+        public void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

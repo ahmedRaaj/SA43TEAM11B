@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementSystem.UI
 {
-    partial class FormManageCategories
+    public partial class FormManageCategories
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
+            this.gbCreateEditDel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(756, 25);
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnFilter
@@ -42,33 +42,31 @@
             // 
             // btnCreateNew
             // 
-            this.btnCreateNew.Location = new System.Drawing.Point(505, 462);
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(665, 462);
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(825, 462);
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnDetails
             // 
-            this.btnDetails.Location = new System.Drawing.Point(345, 462);
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FormManageCategories
             // 
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1904, 1001);
-            this.MinimumSize = new System.Drawing.Size(700, 500);
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.Name = "FormManageCategories";
-            this.Load += new System.EventHandler(this.FormManageCategories_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.gbCreateEditDel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

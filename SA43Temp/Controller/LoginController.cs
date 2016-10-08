@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.UI;
+﻿using LibraryManagementSystem.Dao;
+using LibraryManagementSystem.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,10 +27,16 @@ namespace LibraryManagementSystem.Controller
            
             else
             {
-                logInAttempt++;
-               
-                FormLogIn.ShowMessage("Please Input Correct username and password");
-                return false;
+                EmployeeDao mDao = new EmployeeDao();
+                Employee em = mDao.Employees.Where(e => e.UserName.Equals(usrname) && e.Password.Equals(password)).ToList().FirstOrDefault();
+                if(em != null)
+                {
+                    return true;
+                } else
+                {
+                    logInAttempt++;
+                    return false;
+                }  
             }
 
         }

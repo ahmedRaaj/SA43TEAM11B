@@ -39,6 +39,14 @@
             // 
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
+            // txbKeyword
+            // 
+            this.txbKeyword.Location = new System.Drawing.Point(117, 35);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(508, 35);
+            // 
             // btnCreateNew
             // 
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
@@ -57,8 +65,9 @@
             // 
             // FormManagePublishers
             // 
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1272, 525);
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManagePublishers";
             this.Load += new System.EventHandler(this.FormManagePublishers_Load);

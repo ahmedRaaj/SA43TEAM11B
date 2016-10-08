@@ -22,9 +22,13 @@ namespace LibraryManagementSystem.UI
         private void DgvPublisherSourceChanged(object sender, EventArgs e)
         {
             /// throw new NotImplementedException();
-            this.dgv.Columns["PublisherID"].Visible = false;
-            this.dgv.Columns["Books"].Visible = false;
-        }
+
+            if (dgv.DataSource != null)
+            {
+                this.dgv.Columns["PublisherID"].Visible = false;
+                this.dgv.Columns["Books"].Visible = false;
+            }
+            }
 
         public FormManagePublishers(PublisherController controller) : this(){
             PublisherController = controller;

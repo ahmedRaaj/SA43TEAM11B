@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
+            this.gbCreateEditDel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -39,9 +40,13 @@
             // 
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(6, 38);
+            // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(18, 41);
+            this.label1.Location = new System.Drawing.Point(499, 35);
             // 
             // btnCreateNew
             // 
@@ -62,11 +67,12 @@
             // FormManageMembers
             // 
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1904, 1001);
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageMembers";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.gbCreateEditDel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
