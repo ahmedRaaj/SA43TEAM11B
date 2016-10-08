@@ -40,20 +40,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Coral;
+            this.label1.Font = new System.Drawing.Font("Bell MT", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(74, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 22);
+            this.label1.Size = new System.Drawing.Size(163, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Coral;
+            this.label2.Font = new System.Drawing.Font("Bell MT", 16F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(78, 217);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 22);
+            this.label2.Size = new System.Drawing.Size(158, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -61,16 +63,17 @@
             // tbUserName
             // 
             this.tbUserName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUserName.Location = new System.Drawing.Point(174, 117);
+            this.tbUserName.Location = new System.Drawing.Point(252, 120);
             this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(376, 29);
+            this.tbUserName.Size = new System.Drawing.Size(379, 29);
             this.tbUserName.TabIndex = 2;
             // 
             // tbPassword
             // 
             this.tbPassword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(174, 210);
+            this.tbPassword.Location = new System.Drawing.Point(252, 210);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(376, 29);
             this.tbPassword.TabIndex = 3;
             // 
@@ -114,7 +117,7 @@
             this.Controls.Add(this.tbPassword);
             this.MinimumSize = new System.Drawing.Size(1500, 900);
             this.Name = "FormLogIn";
-            this.Text = "LogIn";
+            this.Text = "Library System by Team11B- Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();

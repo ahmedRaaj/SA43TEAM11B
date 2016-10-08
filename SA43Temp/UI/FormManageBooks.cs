@@ -74,5 +74,10 @@ namespace LibraryManagementSystem.UI
             BookController.InitiateCrud(false);
             BookController.FormBookCrud.DisableItemsForView();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -82,8 +82,13 @@ namespace LibraryManagementSystem.Controller
         }
         public void AddForBorrow(int id)
         {
+           if( bookDao.ct.Books.Find(id) == null)
+            {
+                FormBorrow.ShowMessage("This book is not belongs to Our System");
+                return;
+            }
 
-          Book book  =  bookDao.ct.Books.Where(b => b.BookID == id && b.Status.Equals(BookStatus.Available.ToString())).ToList().FirstOrDefault();
+            Book book  =  bookDao.ct.Books.Where(b => b.BookID == id && b.Status.Equals(BookStatus.Available.ToString())).ToList().FirstOrDefault();
           if(book != null)
             {
                 if (book.Status.Equals(BookStatus.Available.ToString()))
@@ -101,7 +106,7 @@ namespace LibraryManagementSystem.Controller
             }
             else
             {
-                FormBorrow.ShowMessage("No Book found");
+                FormBorrow.ShowMessage("This Book is Already OnRent, Return The Book First");
             }
           
         }

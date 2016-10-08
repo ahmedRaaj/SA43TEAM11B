@@ -44,12 +44,8 @@
             this.btnDataDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbCreateEditDel = new System.Windows.Forms.GroupBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+   
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gbCreateEditDel.SuspendLayout();
@@ -225,82 +221,29 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(957, 589);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 38);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Details";
-            this.button1.UseVisualStyleBackColor = false;
+     
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.btnCreateNew);
+            this.groupBox2.Controls.Add(this.btnEdit);
+            this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Location = new System.Drawing.Point(295, 564);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(445, 82);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(169, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(43, 25);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 38);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Create New";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Coral;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(296, 25);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 38);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Coral;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1111, 589);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(108, 38);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Close";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.btnClose_Click);
+        
             // 
             // FormManageItemsTemplate
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1314, 658);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.gbCreateEditDel);
             this.Controls.Add(this.btnDetails);
+            this.Controls.Add(this.gbCreateEditDel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv);
             this.Name = "FormManageItemsTemplate";
@@ -333,11 +276,9 @@
         public System.Windows.Forms.DataGridViewButtonColumn btnDataDelete;
         public System.Windows.Forms.Button btnClose;
         public System.Windows.Forms.GroupBox gbCreateEditDel;
-        public System.Windows.Forms.Button button1;
+      
         public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button5;
+  
+    
     }
 }

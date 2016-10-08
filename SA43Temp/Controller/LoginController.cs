@@ -12,7 +12,7 @@ namespace LibraryManagementSystem.Controller
    public class LoginController
     {
         public FormLogIn FormLogIn { get; set; }
-        public int logInAttempt = 0;
+        public int logInAttempt = 3;
         public LoginController()
         {
             FormLogIn = new FormLogIn(this);
@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.Controller
                     return true;
                 } else
                 {
-                    logInAttempt++;
+                    logInAttempt--;
                     return false;
                 }  
             }

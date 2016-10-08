@@ -26,6 +26,22 @@ namespace LibraryManagementSystem.UI
         public FormBorrow(BorrowingController controler) : this()
         {
             BorrowingController = controler;
+            this.dgBorrowBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.dgBorrowBooks.DataSourceChanged += dgvBooksSourceChanged;
+        }
+
+  
+
+        private void dgvBooksSourceChanged(object sender, EventArgs e)
+        {
+            if (dgBorrowBooks.DataSource != null)
+            {
+                this.dgBorrowBooks.Columns["CategoryID"].Visible = false;
+                this.dgBorrowBooks.Columns["PublisherID"].Visible = false;
+                this.dgBorrowBooks.Columns["BorrowingDetails"].Visible = false;
+                this.dgBorrowBooks.Columns["BookCopy"].Visible = false;
+
+            }
         }
 
         public void ShowMessage(String message)

@@ -38,10 +38,14 @@ namespace LibraryManagementSystem.UI
                 MainController mainController = new MainController();
                 mainController.ShowMainWindow();
                 this.Hide();
-            }else if (LoginController.logInAttempt > 2)
+            }else if (LoginController.logInAttempt < 1)
             {
                 this.ShowMessage("You Have Entered Maximum Time");
                 this.Dispose();
+            }
+            else
+            {
+                this.ShowMessage("Wrong User Id and Password Incorrect!  You can try:  "+ LoginController.logInAttempt+" more time.");
             }
           
             

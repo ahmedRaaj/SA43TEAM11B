@@ -30,6 +30,7 @@
         {
             this.groupBox1.SuspendLayout();
             this.gbCreateEditDel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -60,6 +61,10 @@
             // 
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
+            // button3
+            // 
+          
+            // 
             // FormManageBooks
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -71,6 +76,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbCreateEditDel.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

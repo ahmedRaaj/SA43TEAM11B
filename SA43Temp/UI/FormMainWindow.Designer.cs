@@ -295,7 +295,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormMainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Library System";
+            this.Text = "Library System by Team11B- MainScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
