@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
+            this.gbCreateEditDel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -66,13 +68,15 @@
             // FormManagePublishers
             // 
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FloralWhite;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManagePublishers";
             this.Load += new System.EventHandler(this.FormManagePublishers_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.gbCreateEditDel.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

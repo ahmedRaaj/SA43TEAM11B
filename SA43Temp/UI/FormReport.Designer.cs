@@ -40,7 +40,7 @@
             // 
             // btnBookList
             // 
-            this.btnBookList.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBookList.BackColor = System.Drawing.Color.Coral;
             this.btnBookList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookList.Location = new System.Drawing.Point(82, 27);
             this.btnBookList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -62,7 +62,7 @@
             // 
             // btnManagementReport
             // 
-            this.btnManagementReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnManagementReport.BackColor = System.Drawing.Color.Coral;
             this.btnManagementReport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManagementReport.Location = new System.Drawing.Point(82, 137);
             this.btnManagementReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -74,7 +74,7 @@
             // 
             // btnBooksRented
             // 
-            this.btnBooksRented.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBooksRented.BackColor = System.Drawing.Color.Coral;
             this.btnBooksRented.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooksRented.Location = new System.Drawing.Point(82, 247);
             this.btnBooksRented.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -86,7 +86,7 @@
             // 
             // btnFineReport
             // 
-            this.btnFineReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnFineReport.BackColor = System.Drawing.Color.Coral;
             this.btnFineReport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFineReport.Location = new System.Drawing.Point(82, 357);
             this.btnFineReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1308, 603);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);

@@ -42,10 +42,11 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.BurlyWood;
-            this.btnSave.Location = new System.Drawing.Point(456, 385);
+            this.btnSave.BackColor = System.Drawing.Color.Coral;
+            this.btnSave.Location = new System.Drawing.Point(684, 642);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 21);
+            this.btnSave.Size = new System.Drawing.Size(112, 35);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -53,10 +54,11 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.BurlyWood;
-            this.btnCancel.Location = new System.Drawing.Point(554, 385);
+            this.btnCancel.BackColor = System.Drawing.Color.Coral;
+            this.btnCancel.Location = new System.Drawing.Point(831, 642);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 21);
+            this.btnCancel.Size = new System.Drawing.Size(112, 35);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -64,78 +66,87 @@
             // 
             // gbPublisherInfo
             // 
-            this.gbPublisherInfo.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.gbPublisherInfo.BackColor = System.Drawing.Color.Coral;
             this.gbPublisherInfo.Controls.Add(this.tbDetials);
             this.gbPublisherInfo.Controls.Add(this.lblPublisherDetails);
             this.gbPublisherInfo.Controls.Add(this.tbWebsite);
             this.gbPublisherInfo.Controls.Add(this.lblPublisherWeb);
             this.gbPublisherInfo.Controls.Add(this.tbPublisherName);
             this.gbPublisherInfo.Controls.Add(this.lblPublisherName);
-            this.gbPublisherInfo.Location = new System.Drawing.Point(12, 12);
+            this.gbPublisherInfo.Location = new System.Drawing.Point(18, 20);
+            this.gbPublisherInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbPublisherInfo.Name = "gbPublisherInfo";
-            this.gbPublisherInfo.Size = new System.Drawing.Size(617, 367);
+            this.gbPublisherInfo.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbPublisherInfo.Size = new System.Drawing.Size(926, 612);
             this.gbPublisherInfo.TabIndex = 10;
             this.gbPublisherInfo.TabStop = false;
             this.gbPublisherInfo.Text = "Publisher Infomation";
             // 
             // tbDetials
             // 
-            this.tbDetials.Location = new System.Drawing.Point(182, 169);
+            this.tbDetials.Location = new System.Drawing.Point(273, 282);
+            this.tbDetials.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDetials.Multiline = true;
             this.tbDetials.Name = "tbDetials";
-            this.tbDetials.Size = new System.Drawing.Size(287, 100);
+            this.tbDetials.Size = new System.Drawing.Size(428, 164);
             this.tbDetials.TabIndex = 11;
             // 
             // lblPublisherDetails
             // 
             this.lblPublisherDetails.AutoSize = true;
-            this.lblPublisherDetails.Location = new System.Drawing.Point(55, 172);
+            this.lblPublisherDetails.Location = new System.Drawing.Point(82, 287);
+            this.lblPublisherDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPublisherDetails.Name = "lblPublisherDetails";
-            this.lblPublisherDetails.Size = new System.Drawing.Size(113, 12);
+            this.lblPublisherDetails.Size = new System.Drawing.Size(131, 20);
             this.lblPublisherDetails.TabIndex = 10;
             this.lblPublisherDetails.Text = "Publisher Details:";
             // 
             // tbWebsite
             // 
-            this.tbWebsite.Location = new System.Drawing.Point(182, 116);
+            this.tbWebsite.Location = new System.Drawing.Point(273, 193);
+            this.tbWebsite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbWebsite.Name = "tbWebsite";
-            this.tbWebsite.Size = new System.Drawing.Size(287, 21);
+            this.tbWebsite.Size = new System.Drawing.Size(428, 26);
             this.tbWebsite.TabIndex = 9;
             // 
             // lblPublisherWeb
             // 
             this.lblPublisherWeb.AutoSize = true;
-            this.lblPublisherWeb.Location = new System.Drawing.Point(55, 119);
+            this.lblPublisherWeb.Location = new System.Drawing.Point(82, 198);
+            this.lblPublisherWeb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPublisherWeb.Name = "lblPublisherWeb";
-            this.lblPublisherWeb.Size = new System.Drawing.Size(113, 12);
+            this.lblPublisherWeb.Size = new System.Drawing.Size(140, 20);
             this.lblPublisherWeb.TabIndex = 8;
             this.lblPublisherWeb.Text = "Publisher Website:";
             // 
             // tbPublisherName
             // 
-            this.tbPublisherName.Location = new System.Drawing.Point(182, 66);
+            this.tbPublisherName.Location = new System.Drawing.Point(273, 110);
+            this.tbPublisherName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPublisherName.Name = "tbPublisherName";
-            this.tbPublisherName.Size = new System.Drawing.Size(287, 21);
+            this.tbPublisherName.Size = new System.Drawing.Size(428, 26);
             this.tbPublisherName.TabIndex = 7;
             // 
             // lblPublisherName
             // 
             this.lblPublisherName.AutoSize = true;
-            this.lblPublisherName.Location = new System.Drawing.Point(73, 70);
+            this.lblPublisherName.Location = new System.Drawing.Point(110, 117);
+            this.lblPublisherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPublisherName.Name = "lblPublisherName";
-            this.lblPublisherName.Size = new System.Drawing.Size(95, 12);
+            this.lblPublisherName.Size = new System.Drawing.Size(124, 20);
             this.lblPublisherName.TabIndex = 6;
             this.lblPublisherName.Text = "Publisher Name:";
             // 
             // FormPublisherCrud
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(652, 446);
+            this.BackColor = System.Drawing.Color.Coral;
+            this.ClientSize = new System.Drawing.Size(978, 743);
             this.Controls.Add(this.gbPublisherInfo);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPublisherCrud";
             this.Text = "Publisher Management";
             this.gbPublisherInfo.ResumeLayout(false);

@@ -76,7 +76,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnLogIn.BackColor = System.Drawing.Color.Coral;
             this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.Location = new System.Drawing.Point(427, 277);
             this.btnLogIn.Name = "btnLogIn";
@@ -88,7 +88,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.BurlyWood;
+            this.button1.BackColor = System.Drawing.Color.Coral;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(277, 277);

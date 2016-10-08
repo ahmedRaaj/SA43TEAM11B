@@ -41,7 +41,7 @@
             // 
             // btnManageBooks
             // 
-            this.btnManageBooks.BackColor = System.Drawing.Color.Tan;
+            this.btnManageBooks.BackColor = System.Drawing.Color.Coral;
             this.btnManageBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageBooks.ForeColor = System.Drawing.Color.Black;
             this.btnManageBooks.Location = new System.Drawing.Point(30, 57);
@@ -54,7 +54,7 @@
             // 
             // btnManagePulishers
             // 
-            this.btnManagePulishers.BackColor = System.Drawing.Color.Tan;
+            this.btnManagePulishers.BackColor = System.Drawing.Color.Coral;
             this.btnManagePulishers.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManagePulishers.ForeColor = System.Drawing.Color.Black;
             this.btnManagePulishers.Location = new System.Drawing.Point(668, 57);
@@ -67,7 +67,7 @@
             // 
             // btnManageCategories
             // 
-            this.btnManageCategories.BackColor = System.Drawing.Color.Tan;
+            this.btnManageCategories.BackColor = System.Drawing.Color.Coral;
             this.btnManageCategories.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageCategories.ForeColor = System.Drawing.Color.Black;
             this.btnManageCategories.Location = new System.Drawing.Point(337, 57);
@@ -80,7 +80,7 @@
             // 
             // btnManageMembers
             // 
-            this.btnManageMembers.BackColor = System.Drawing.Color.Tan;
+            this.btnManageMembers.BackColor = System.Drawing.Color.Coral;
             this.btnManageMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageMembers.ForeColor = System.Drawing.Color.Black;
             this.btnManageMembers.Location = new System.Drawing.Point(161, 75);
@@ -107,7 +107,7 @@
             // 
             // btnManageEmployee
             // 
-            this.btnManageEmployee.BackColor = System.Drawing.Color.Tan;
+            this.btnManageEmployee.BackColor = System.Drawing.Color.Coral;
             this.btnManageEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnManageEmployee.Location = new System.Drawing.Point(491, 75);
@@ -128,7 +128,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.groupBox2.Location = new System.Drawing.Point(42, 46);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1081, 155);
+            this.groupBox2.Size = new System.Drawing.Size(1081, 156);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Books";
@@ -137,12 +137,13 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1158, 744);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormAdmin";
             this.Text = "Managing Items";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -92,5 +92,10 @@ namespace LibraryManagementSystem.UI
         {
 
         }
+
+        private void lblMemberID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

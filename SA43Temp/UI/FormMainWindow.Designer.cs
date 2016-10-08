@@ -60,6 +60,7 @@
             // 
             this.pnlMain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlMain.AutoSize = true;
+            this.pnlMain.BackColor = System.Drawing.Color.Coral;
             this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMain.Location = new System.Drawing.Point(255, 56);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -70,7 +71,7 @@
             // btnAdminManage
             // 
             this.btnAdminManage.AutoSize = true;
-            this.btnAdminManage.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnAdminManage.BackColor = System.Drawing.Color.Coral;
             this.btnAdminManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAdminManage.Location = new System.Drawing.Point(28, 212);
             this.btnAdminManage.Margin = new System.Windows.Forms.Padding(34, 3, 4, 3);
@@ -83,7 +84,7 @@
             // 
             // btnBorrow
             // 
-            this.btnBorrow.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnBorrow.BackColor = System.Drawing.Color.Coral;
             this.btnBorrow.Location = new System.Drawing.Point(28, 319);
             this.btnBorrow.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBorrow.Name = "btnBorrow";
@@ -95,7 +96,7 @@
             // 
             // btnRetrun
             // 
-            this.btnRetrun.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnRetrun.BackColor = System.Drawing.Color.Coral;
             this.btnRetrun.Location = new System.Drawing.Point(28, 426);
             this.btnRetrun.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRetrun.Name = "btnRetrun";
@@ -107,7 +108,7 @@
             // 
             // btnMain
             // 
-            this.btnMain.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnMain.BackColor = System.Drawing.Color.Coral;
             this.btnMain.Location = new System.Drawing.Point(28, 105);
             this.btnMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMain.Name = "btnMain";
@@ -263,7 +264,7 @@
             // 
             // btnReport
             // 
-            this.btnReport.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnReport.BackColor = System.Drawing.Color.Coral;
             this.btnReport.Location = new System.Drawing.Point(28, 533);
             this.btnReport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnReport.Name = "btnReport";

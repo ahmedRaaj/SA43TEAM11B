@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1.SuspendLayout();
+            this.gbCreateEditDel.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.groupBox1.BackColor = System.Drawing.Color.Coral;
             // 
             // btnReset
             // 
@@ -63,12 +64,13 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1904, 1001);
+            this.BackColor = System.Drawing.Color.Coral;
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormManageBooks";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.gbCreateEditDel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

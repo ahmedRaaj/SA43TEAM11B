@@ -23,6 +23,8 @@ namespace LibraryManagementSystem.UI
             InitializeComponent();
             // this.pnlMain.MinimumSize = new System.Drawing.Size(1200, 1000);
             this.SuspendLayout();
+            this.pnlMain.BackColor = Color.FromArgb(100, 88, 44, 55);
+            //this.pnlMain.BackColor.
             this.Size = new System.Drawing.Size(SystemInformation.WorkingArea.Width, SystemInformation.WorkingArea.Height);
             this.MinimumSize = new System.Drawing.Size(SystemInformation.WorkingArea.Width, SystemInformation.WorkingArea.Height);
             this.pnlMain.MinimumSize = new System.Drawing.Size(this.Bounds.Width - 200, this.Bounds.Height-100);
@@ -97,7 +99,7 @@ namespace LibraryManagementSystem.UI
             }
 
             pnlMain.SuspendLayout();
-
+            this.pnlMain.BackColor = Color.FromArgb(100, 88, 44, 55);
             fromToPut.Dock = DockStyle.Fill;
             fromToPut.AutoSize = true;
             pnlMain.Controls.Add(fromToPut);
