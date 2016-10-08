@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibraryManagementSystem.Controller;
 using LibraryManagementSystem.Dao;
+using LibraryManagementSystem.Util;
+
 namespace LibraryManagementSystem.UI
 {
     public partial class BookCrud : Form
@@ -30,17 +32,19 @@ namespace LibraryManagementSystem.UI
             this.create = create;
             this.cbCategory.DataSource = catDao.Categories.ToList();
             this.cbPublisher.DataSource = pubDao.Publishers.ToList();
-            this.cbStatus.DataSource = new string[] { "Rented", "In-Stock", "Not Available" };
+            this.cbStatus.DataSource = new string[] { BookStatus.OnRent.ToString(),BookStatus.Available.ToString(),BookStatus.NotAvailable.ToString() };
         }
 
-        public void UpdateFields(int bookId,string bookName,string author,string isbn,string locationDetails)
+        public void UpdateFields(int bookId,string bookName,string author,string isbn,string locationDetails,string catString,string pubString,string bookStatus)
         {
             this.bookId = bookId;
             tbBookName.Text = bookName;
             tbAuthor.Text = author;
             tbISBN.Text = isbn;
             tbLocationDeatail.Text = locationDetails;
-            
+            cbCategory.SelectedItem = catString;
+            cbPublisher.SelectedItem = pubString;
+            cbStatus.SelectedItem = bookStatus;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -87,6 +91,22 @@ namespace LibraryManagementSystem.UI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void DisableItemsForView()
+        {
+            this.tbAuthor.Enabled = false;
+            this.tbBookName.Enabled = false;
+            this.tbISBN.Enabled = false;
+            this.tbLocationDeatail.Enabled = false;
+            this.cbCategory.Enabled = false;
+            this.cbPublisher.Enabled = false;
+            this.cbStatus.Enabled = false;
+            this.dtpCreatedate.Enabled = false;
+            
+
+
+            this.btnSave.Visible = false;
         }
     }
 }

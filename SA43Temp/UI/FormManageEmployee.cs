@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using LibraryManagementSystem.Controller;
+using LibraryManagementSystem.Dao;
 
 namespace LibraryManagementSystem.UI
 {
@@ -18,9 +19,32 @@ namespace LibraryManagementSystem.UI
             InitializeComponent();
         }
 
-        public FormManageEmployee(EmployeeController employeeController)
+        public FormManageEmployee(EmployeeController employeeController) : this()
         {
             this.EmployeeController = employeeController;
+        }
+
+        private void btnCreateNew_Click(object sender, EventArgs e)
+        {
+            EmployeeController.InitiateCrud(true);
+          
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            EmployeeController.InitiateCrud(false);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Employee em = dgv.SelectedRows[0].DataBoundItem as Employee;
+            EmployeeController.DeleteEmployee(em.EmployeeID);
+        }
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            EmployeeController.InitiateCrud(false);
+            EmployeeController.FormCrud.DisableItemsForView();
         }
     }
 }

@@ -15,5 +15,7 @@ namespace LibraryManagementSystem.Dao
         }
 
         public DbSet<Employee> Employees { get { return ct.Employees; }  }
+
+
     }
 }

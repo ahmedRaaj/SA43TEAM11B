@@ -68,5 +68,11 @@ namespace LibraryManagementSystem.UI
         {
            BookController.Filter(cmbSearchType.SelectedItem as string, txbKeyword.Text);
         }
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            BookController.InitiateCrud(false);
+            BookController.FormBookCrud.DisableItemsForView();
+        }
     }
 }

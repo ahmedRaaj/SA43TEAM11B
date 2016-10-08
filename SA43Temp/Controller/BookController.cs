@@ -10,7 +10,9 @@ namespace LibraryManagementSystem.Controller
     public class BookController
     {
 
-        public FormManageBooks FormManageBook { get; set; }
+        public FormManageBooks FormManageBook { get; private set; }
+        public BookCrud FormBookCrud { get; private set; }
+
         private BookDao bookDao = new BookDao();
 
         private List<Book> _bookList;
@@ -33,15 +35,15 @@ namespace LibraryManagementSystem.Controller
 
         public void InitiateCrud(bool create)
         {
-            BookCrud bookCrudFrom = new BookCrud(this,create);
+            FormBookCrud = new BookCrud(this,create);
             if (!create) // called for editing
             {
                 Book b = FormManageBook.dgv.SelectedRows[0].DataBoundItem as Book;
-                bookCrudFrom.UpdateFields(b.BookID,b.BookName, b.Authors, b.ISBN, b.LocationDetails);
+                FormBookCrud.UpdateFields(b.BookID,b.BookName, b.Authors, b.ISBN, b.LocationDetails,b.Category.ToString(),b.Publisher.ToString(),b.Status);
                 
             }
-            
-            bookCrudFrom.Show();
+
+            FormBookCrud.Show();
         }
 
         public void ShowManageBookForm()

@@ -28,7 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btnCreateNew
+            // 
+            this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnDetails
+            // 
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+            // 
+            // FormManageEmployee
+            // 
+            this.ClientSize = new System.Drawing.Size(2026, 1036);
+            this.Name = "FormManageEmployee";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

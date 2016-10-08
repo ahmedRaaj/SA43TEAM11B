@@ -243,6 +243,7 @@
       <DependentUpon>FormReturnBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\BookStatus.cs" />
+    <Compile Include="Util\EmployeeRole.cs" />
     <Compile Include="Util\MemberStatus.cs" />
     <EmbeddedResource Include="Report\crBookList.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -291,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormManageCategories.resx">
       <DependentUpon>FormManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManageEmployee.resx">
+      <DependentUpon>FormManageEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormManageItemsTemplate.resx">
       <DependentUpon>FormManageItemsTemplate.cs</DependentUpon>
