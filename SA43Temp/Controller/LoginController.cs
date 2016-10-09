@@ -27,16 +27,27 @@ namespace LibraryManagementSystem.Controller
            
             else
             {
-                EmployeeDao mDao = new EmployeeDao();
-                Employee em = mDao.Employees.Where(e => e.UserName.Equals(usrname) && e.Password.Equals(password)).ToList().FirstOrDefault();
-                if(em != null)
+                try
                 {
-                    return true;
-                } else
+                    EmployeeDao mDao = new EmployeeDao();
+                    Employee em = mDao.Employees.Where(e => e.UserName.Equals(usrname) && e.Password.Equals(password)).ToList().FirstOrDefault();
+                    if (em != null)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        logInAttempt--;
+                        return false;
+                    }
+                }
+                catch (Exception)
                 {
-                    logInAttempt--;
+
+                    FormLogIn.ShowMessage("Database is not set properly");
                     return false;
-                }  
+                }
+               
             }
 
         }
